@@ -1,0 +1,7 @@
+--* 添加字段(add) alter table 表名 add 字段名 数据类型;
+-- alter table 表名 add 字段名 数据类型 first;
+-- alter table 表名 add 字段名 数据类型 after 字段名;
+-- * 删除字段(drop) alter table 表名 drop 字段名;
+-- * 修改数据类型(modify) alter table 表名 modify 字段名 新数据类型;
+-- * 修改字段名(change) alter table 表名 change 旧字段名 新字段名 新数据类型;
+-- * 表重命名(rename) alter table 表名 rename 新表名

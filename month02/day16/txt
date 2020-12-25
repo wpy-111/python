@@ -1,0 +1,6 @@
+ 添加用户 % 表示自动选择可用IP
+create user 'vip'@'%' identified by '123';
+删除用户
+delete from mysql.user where name='用户名';
+刷新权限
+flush privileges;

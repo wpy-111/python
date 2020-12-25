@@ -1,0 +1,13 @@
+练习 ：
+    创建表  sanguo
+    表结构
+    id     name    gender    country   attack   defense
+
+    插入数据
+
+
+  语句顺序：：
+
+   select country,gender,count(*) as number
+   from sanguo where gender = 'm' group by gender,country
+   order by number desc limit 2;

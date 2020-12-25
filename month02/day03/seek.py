@@ -1,0 +1,10 @@
+"""
+   文件偏移量
+   tell()获取文件偏移量大小
+   seek()移动文件偏移量的位置
+"""
+f=open('file','wb+')
+f.write('ggggghhhhhhnnnnnn'.encode())
+print(f.tell())
+f.seek(-7,1)
+print(f.read())

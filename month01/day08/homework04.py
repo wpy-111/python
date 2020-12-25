@@ -1,0 +1,9 @@
+"""
+    集合的函数
+"""
+set={"啥僧",8,65,"悟空"}
+set.update("7fsd")
+print(set)
+set.pop()
+print(set)
+print(set.copy())

@@ -1,0 +1,1298 @@
+2020-12-12 15:25:59 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: Maoyan)
+2020-12-12 15:25:59 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)], pyOpenSSL 20.0.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.2.1, Platform Windows-10-10.0.18362-SP0
+2020-12-12 15:25:59 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-12-12 15:25:59 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Maoyan',
+ 'LOG_FILE': 'guazi.log',
+ 'NEWSPIDER_MODULE': 'Maoyan.spiders',
+ 'SPIDER_MODULES': ['Maoyan.spiders']}
+2020-12-12 15:25:59 [scrapy.extensions.telnet] INFO: Telnet Password: 406728492a2e204d
+2020-12-12 15:25:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-12-12 15:26:00 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-12-12 15:26:00 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-12-12 15:26:00 [scrapy.middleware] INFO: Enabled item pipelines:
+['Maoyan.pipelines.MaoyanPipeline']
+2020-12-12 15:26:00 [scrapy.core.engine] INFO: Spider opened
+2020-12-12 15:26:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-12-12 15:26:00 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=0> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=20> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=70> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=10> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=40> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=60> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=30> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=50> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=90> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=80> (referer: None)
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '我不是药神',
+ 'star': '<p class="star">\n                主演：徐峥,周一围,王传君\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-07-05</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '肖申克的救赎',
+ 'star': '<p class="star">\n'
+         '                主演：蒂姆·罗宾斯,摩根·弗里曼,鲍勃·冈顿\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-09-10(加拿大)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '绿皮书',
+ 'star': '<p class="star">\n'
+         '                主演：维果·莫腾森,马赫沙拉·阿里,琳达·卡德里尼\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-03-01</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '海上钢琴师',
+ 'star': '<p class="star">\n'
+         '                主演：蒂姆·罗斯,比尔·努恩,克兰伦斯·威廉姆斯三世\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-11-15</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '哪吒之魔童降世',
+ 'star': '<p class="star">\n                主演：吕艳婷,囧森瑟夫,瀚墨\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-07-26</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '小偷家族',
+ 'star': '<p class="star">\n                主演：中川雅也,安藤樱,松冈茉优\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-08-03</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '霸王别姬',
+ 'star': '<p class="star">\n                主演：张国荣,张丰毅,巩俐\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1993-07-26</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '美丽人生',
+ 'star': '<p class="star">\n'
+         '                主演：罗伯托·贝尼尼,朱斯蒂诺·杜拉诺,赛尔乔·比尼·布斯特里克\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2020-01-03</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '盗梦空间',
+ 'star': '<p class="star">\n'
+         '                主演：莱昂纳多·迪卡普里奥,渡边谦,约瑟夫·高登-莱维特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-09-01</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '这个杀手不太冷',
+ 'star': '<p class="star">\n'
+         '                主演：让·雷诺,加里·奥德曼,娜塔莉·波特曼\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-09-14(法国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '何以为家',
+ 'star': '<p class="star">\n'
+         '                主演：赞恩·阿尔·拉菲亚,约丹诺斯·希费罗,博鲁瓦蒂夫·特雷杰·班科尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-04-29</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '少年派的奇幻漂流',
+ 'star': '<p class="star">\n                主演：苏拉·沙玛,伊尔凡·可汗,塔布\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2012-11-22</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '忠犬八公的故事',
+ 'star': '<p class="star">\n                主演：Forest,理查·基尔,琼·艾伦\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2009-06-13(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '当幸福来敲门',
+ 'star': '<p class="star">\n'
+         '                主演：威尔·史密斯,贾登·史密斯,坦迪·牛顿\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-01-17</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '情书',
+ 'star': '<p class="star">\n                主演：中山美穗,丰川悦司,范文雀\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1999-03</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '放牛班的春天',
+ 'star': '<p class="star">\n'
+         '                主演：热拉尔·朱尼奥,让-巴蒂斯特·莫尼耶,玛丽·布奈尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2004-10-16</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '泰坦尼克号',
+ 'star': '<p class="star">\n'
+         '                主演：莱昂纳多·迪卡普里奥,凯特·温丝莱特,比利·赞恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1998-04-03</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '龙猫',
+ 'star': '<p class="star">\n                主演：秦岚,糸井重里,岛本须美\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-12-14</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '复仇者联盟4：终局之战',
+ 'star': '<p class="star">\n'
+         '                主演：小罗伯特·唐尼,克里斯·埃文斯,马克·鲁法洛\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-04-24</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '熔炉',
+ 'star': '<p class="star">\n                主演：孔刘,郑有美,金智英\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-09-22(韩国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '波西米亚狂想曲',
+ 'star': '<p class="star">\n'
+         '                主演：拉米·马雷克,本·哈迪,约瑟夫•梅泽罗\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-03-22</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '爱在日落黄昏时',
+ 'star': '<p class="star">\n'
+         '                主演：伊桑·霍克,朱莉·德尔佩,弗农·多布切夫\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-04-20</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '天空之城',
+ 'star': '<p class="star">\n                主演：寺田农,鹫尾真知子,龟山助清\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1992-05-01</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '辩护人',
+ 'star': '<p class="star">\n                主演：宋康昊,郭度沅,吴达洙\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2013-12-18(韩国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '无间道',
+ 'star': '<p class="star">\n                主演：刘德华,梁朝伟,黄秋生\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-09-05</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '剪刀手爱德华',
+ 'star': '<p class="star">\n'
+         '                主演：约翰尼·德普,薇诺娜·瑞德,黛安娜·威斯特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1990-12-06(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '网络谜踪',
+ 'star': '<p class="star">\n                主演：约翰·赵,米切尔·拉,黛博拉·梅辛\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-12-14</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '穿条纹睡衣的男孩',
+ 'star': '<p class="star">\n'
+         '                主演：阿沙·巴特菲尔德,维拉·法梅加,大卫·休里斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-08-28(英国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '心灵捕手',
+ 'star': '<p class="star">\n'
+         '                主演：罗宾·威廉姆斯,马特·达蒙,明妮·德里弗\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1997-12-05(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '重庆森林',
+ 'star': '<p class="star">\n                主演：梁朝伟,王菲,金城武\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-07-14(中国香港)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '怦然心动',
+ 'star': '<p class="star">\n'
+         '                主演：玛德琳·卡罗尔,卡兰·麦克奥利菲,艾丹•奎因\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-07-26(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '星际穿越',
+ 'star': '<p class="star">\n'
+         '                主演：马修·麦康纳,安妮·海瑟薇,杰西卡·查斯坦\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-11-12</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '千与千寻',
+ 'star': '<p class="star">\n                主演：柊瑠美,周冬雨,入野自由\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-06-21</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '阿甘正传',
+ 'star': '<p class="star">\n'
+         '                主演：汤姆·汉克斯,罗宾·怀特,加里·西尼斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-07-06(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '触不可及',
+ 'star': '<p class="star">\n'
+         '                主演：弗朗索瓦·克鲁塞,奥玛·希,安娜·勒尼\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-11-02(法国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '楚门的世界',
+ 'star': '<p class="star">\n'
+         '                主演：金·凯瑞,劳拉·琳妮,诺亚·艾默里奇\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1998(罗马尼亚)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '寻梦环游记',
+ 'star': '<p class="star">\n'
+         '                主演：安东尼·冈萨雷斯,本杰明·布拉特,盖尔·加西亚·贝纳尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-11-24</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '辛德勒的名单',
+ 'star': '<p class="star">\n'
+         '                主演：连姆·尼森,拉尔夫·费因斯,本·金斯利\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1993-11-30(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '小丑',
+ 'star': '<p class="star">\n'
+         '                主演：华金·菲尼克斯,罗伯特·德尼罗,亚历克·鲍德温\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-10-04(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '摔跤吧！爸爸',
+ 'star': '<p class="star">\n'
+         '                主演：阿米尔·汗,沙克希·坦沃,法缇玛·萨那·纱卡\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-05-05</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '请以你的名字呼唤我',
+ 'star': '<p class="star">\n'
+         '                主演：提莫西·查拉梅,艾米·汉莫,迈克尔·斯图巴\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-01-22(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '闻香识女人',
+ 'star': '<p class="star">\n'
+         '                主演：阿尔·帕西诺,克里斯·奥唐纳,加布里埃尔·安瓦尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1992-12-23(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '机器人总动员',
+ 'star': '<p class="star">\n'
+         '                主演：本·贝尔特,艾丽莎·奈特,杰夫·格尔林\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-06-27(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '末代皇帝',
+ 'star': '<p class="star">\n                主演：尊龙,陈冲,彼得·奥图尔\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1987-10-04(日本)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '西西里的美丽传说',
+ 'star': '<p class="star">\n'
+         '                主演：莫妮卡·安娜·玛丽亚·贝鲁奇,朱塞佩·苏尔法罗,玛蒂尔德·皮亚纳\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2000-10-26(意大利)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '窃听风暴',
+ 'star': '<p class="star">\n'
+         '                主演：乌尔里希·穆埃,塞巴斯蒂安·科赫,马蒂娜·格德克\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2006-03-23(德国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '本杰明·巴顿奇事',
+ 'star': '<p class="star">\n'
+         '                主演：布拉德·皮特,凯特·布兰切特,塔拉吉·P·汉森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-12-25(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '飞越疯人院',
+ 'star': '<p class="star">\n'
+         '                主演：杰克·尼科尔森,路易丝·弗莱彻,威尔·萨姆森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1975-11-19(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '美国往事',
+ 'star': '<p class="star">\n'
+         '                主演：罗伯特·德尼罗,詹姆斯·伍兹,伊丽莎白·麦戈文\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-04-23</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '搏击俱乐部',
+ 'star': '<p class="star">\n'
+         '                主演：爱德华·哈里森·诺顿,布拉德·皮特,海伦娜·伯翰·卡特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1999-09-10(意大利)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '罗马假日',
+ 'star': '<p class="star">\n'
+         '                主演：格利高里·派克,奥黛丽·赫本,埃迪·艾伯特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1953-08-20(意大利)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '布达佩斯大饭店',
+ 'star': '<p class="star">\n'
+         '                主演：拉尔夫·费因斯,托尼·雷沃罗利,西尔莎·罗南\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-06-14</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '海边的曼彻斯特',
+ 'star': '<p class="star">\n'
+         '                主演：卡西·阿弗莱克,卢卡斯·赫奇斯,米歇尔·威廉姆斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-08-25</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '爱在黎明破晓前',
+ 'star': '<p class="star">\n'
+         '                主演：伊桑·霍克,朱莉·德尔佩,安德莉亚·埃克特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1995-01-27(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '七宗罪',
+ 'star': '<p class="star">\n'
+         '                主演：布拉德·皮特,摩根·弗里曼,格温妮斯·帕特洛\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1995-09-22(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '阿凡达',
+ 'star': '<p class="star">\n'
+         '                主演：萨姆·沃辛顿,佐伊·索尔达娜,米歇尔·罗德里格兹\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-01-04</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '超脱',
+ 'star': '<p class="star">\n'
+         '                主演：艾德里安·布洛迪,马西娅·盖伊·哈登,詹姆斯·肯恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-04-25(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '海蒂和爷爷',
+ 'star': '<p class="star">\n'
+         '                主演：阿努克·斯特芬,布鲁诺·甘茨,昆林·艾格匹\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-05-16</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '釜山行',
+ 'star': '<p class="star">\n                主演：孔刘,郑有美,马东锡\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2016-05-13(法国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '春光乍泄',
+ 'star': '<p class="star">\n                主演：张国荣,梁朝伟,张震\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1997-05-17(法国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '三傻大闹宝莱坞',
+ 'star': '<p class="star">\n                主演：阿米尔·汗,黄渤,卡琳娜·卡普\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-12-08</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '教父',
+ 'star': '<p class="star">\n'
+         '                主演：马龙·白兰度,阿尔·帕西诺,詹姆斯·肯恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-04-18</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '被嫌弃的松子的一生',
+ 'star': '<p class="star">\n                主演：中谷美纪,永山瑛太,伊势谷友介\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2006-05-27(日本)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '头号玩家',
+ 'star': '<p class="star">\n'
+         '                主演：泰伊·谢里丹,奥利维亚·库克,本·门德尔森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-03-30</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '三块广告牌',
+ 'star': '<p class="star">\n'
+         '                主演：弗兰西斯·麦克多蒙德,伍迪·哈里森,山姆·洛克威尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-03-02</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '看不见的客人',
+ 'star': '<p class="star">\n'
+         '                主演：马里奥·卡萨斯,阿娜·瓦格纳,何塞·科罗纳多\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-09-15</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '疯狂动物城',
+ 'star': '<p class="star">\n'
+         '                主演：金妮弗·古德温,杰森·贝特曼,伊德瑞斯·艾尔巴\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2016-03-04</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '活着',
+ 'star': '<p class="star">\n                主演：葛优,巩俐,牛犇\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-05-17(法国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '天堂电影院',
+ 'star': '<p class="star">\n'
+         '                主演：菲利浦·诺瓦雷,赛尔乔·卡斯特利托,蒂兹亚娜·罗达托\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1988-09-29(意大利)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '死亡诗社',
+ 'star': '<p class="star">\n'
+         '                主演：罗宾·威廉姆斯,伊桑·霍克,柯特伍德·史密斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1989-06-02(加拿大)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '天使爱美丽',
+ 'star': '<p class="star">\n'
+         '                主演：奥黛丽·塔图,马修·卡索维茨,吕菲斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2001-04-25(比利时)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '让子弹飞',
+ 'star': '<p class="star">\n                主演：姜文,周润发,葛优\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-12-16</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '飞屋环游记',
+ 'star': '<p class="star">\n'
+         '                主演：爱德华·阿斯纳,乔丹·长井,鲍勃·彼德森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2009-08-04</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '乱世佳人',
+ 'star': '<p class="star">\n'
+         '                主演：费雯·丽,克拉克·盖博,奥利维娅·德哈维兰\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1939-12-15(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '菊次郎的夏天',
+ 'star': '<p class="star">\n                主演：北野武,关口雄介,岸本 加世子\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2020-09-25</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '一一',
+ 'star': '<p class="star">\n                主演：吴念真,金燕玲,李凯莉\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-07-28(中国台湾)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '美丽心灵',
+ 'star': '<p class="star">\n'
+         '                主演：罗素·克劳,詹妮弗·康纳利,艾德·哈里斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2001-12-13(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '大话西游之大圣娶亲',
+ 'star': '<p class="star">\n                主演：周星驰,朱茵,莫文蔚\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-10-24</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '蝴蝶效应',
+ 'star': '<p class="star">\n'
+         '                主演：阿什顿·库彻,约翰·帕特里克·阿梅多利,艾米·斯马特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2004-01-23(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '消失的爱人',
+ 'star': '<p class="star">\n'
+         '                主演：本·阿弗莱克,裴淳华,尼尔·帕特里克·哈里斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-09-26(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '血战钢锯岭',
+ 'star': '<p class="star">\n'
+         '                主演：安德鲁·加菲尔德,雨果·维文,卢克·布雷西\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2016-12-08</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '奇迹男孩',
+ 'star': '<p class="star">\n'
+         '                主演：雅各布·特瑞布雷,朱莉娅·罗伯茨,欧文·威尔逊\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-01-19</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '真爱至上',
+ 'star': '<p class="star">\n                主演：休·格兰特,比尔·奈伊,连姆·尼森\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-11-21(英国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '猫鼠游戏',
+ 'star': '<p class="star">\n'
+         '                主演：莱昂纳多·迪卡普里奥,汤姆·汉克斯,克里斯托弗·沃肯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-04-11</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '饮食男女',
+ 'star': '<p class="star">\n                主演：郎雄,吴倩莲,杨贵媚\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-08-03(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '时空恋旅人',
+ 'star': '<p class="star">\n'
+         '                主演：瑞秋·麦克亚当斯,多姆纳尔·格里森,比尔·奈伊\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2013-09-04(英国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '模仿游戏',
+ 'star': '<p class="star">\n'
+         '                主演：本尼迪克特·康伯巴奇,凯拉·奈特莉,马修·古迪\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-07-21</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '黑天鹅',
+ 'star': '<p class="star">\n'
+         '                主演：娜塔莉·波特曼,文森特·卡索,米拉·库妮丝\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-09-01(意大利)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '爱尔兰人',
+ 'star': '<p class="star">\n'
+         '                主演：罗伯特·德尼罗,阿尔·帕西诺,乔·佩西\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-11-27(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '鬼子来了',
+ 'star': '<p class="star">\n                主演：姜文,姜宏波,陈强\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2000-05-13(法国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '素媛',
+ 'star': '<p class="star">\n                主演：李甄,薛耿求,严智苑\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2013-10-02(韩国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '蜘蛛侠：平行宇宙',
+ 'star': '<p class="star">\n'
+         '                主演：沙梅克·摩尔,彭昱畅,杰克·M·约翰森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-12-21</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '断背山',
+ 'star': '<p class="star">\n'
+         '                主演：希斯·莱杰,杰克·吉伦哈尔,米歇尔·威廉姆斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2005-09-02(意大利)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '致命魔术',
+ 'star': '<p class="star">\n'
+         '                主演：休·杰克曼,克里斯蒂安·贝尔,迈克尔·凯恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2006-10-17(意大利)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '蝙蝠侠：黑暗骑士',
+ 'star': '<p class="star">\n'
+         '                主演：克里斯蒂安·贝尔,希斯·莱杰,阿伦·伊克哈特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-07-14(阿根廷)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '十二怒汉',
+ 'star': '<p class="star">\n'
+         '                主演：亨利·方达,李·科布,马丁·鲍尔萨姆\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1957-04-13(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '两杆大烟枪',
+ 'star': '<p class="star">\n'
+         '                主演：杰森·弗莱明,德克斯特·弗莱彻,杰森•斯坦森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1998-08-28(英国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '控方证人',
+ 'star': '<p class="star">\n'
+         '                主演：泰隆·鲍华,玛琳·黛德丽,查尔斯·劳顿\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1957-12-17(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '大鱼',
+ 'star': '<p class="star">\n'
+         '                主演：伊万·麦克格雷格,阿尔伯特·芬尼,杰西卡·兰格\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-12-04(美国)</p>'}
+2020-12-12 15:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '1917',
+ 'star': '<p class="star">\n'
+         '                主演：乔治·麦凯,迪恩·查尔斯·查普曼,马克·斯特朗\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2020-08-07</p>'}
+2020-12-12 15:26:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-12-12 15:26:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3019,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 66435,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'elapsed_time_seconds': 0.4357,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 12, 12, 7, 26, 1, 375577),
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 110,
+ 'log_count/INFO': 10,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2020, 12, 12, 7, 26, 0, 939877)}
+2020-12-12 15:26:01 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-12-12 15:32:52 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: Maoyan)
+2020-12-12 15:32:52 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)], pyOpenSSL 20.0.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.2.1, Platform Windows-10-10.0.18362-SP0
+2020-12-12 15:32:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-12-12 15:32:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Maoyan',
+ 'LOG_FILE': 'guazi.log',
+ 'NEWSPIDER_MODULE': 'Maoyan.spiders',
+ 'SPIDER_MODULES': ['Maoyan.spiders']}
+2020-12-12 15:32:52 [scrapy.extensions.telnet] INFO: Telnet Password: b6e5d84c5139a8c8
+2020-12-12 15:32:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2020-12-12 15:32:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-12-12 15:32:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-12-12 15:32:53 [scrapy.middleware] INFO: Enabled item pipelines:
+['Maoyan.pipelines.MaoyanPipeline']
+2020-12-12 15:32:53 [scrapy.core.engine] INFO: Spider opened
+2020-12-12 15:32:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-12-12 15:32:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=75085789fbb1f61813bf9ea79d969a83arvtt> from <GET https://maoyan.com/board/4?offset=0>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=64846830ba1344015a6548cb7a2be948ycla5> from <GET https://maoyan.com/board/4?offset=10>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=4810342c5855d6e99e728ebf9ef30f80gmr2n> from <GET https://maoyan.com/board/4?offset=50>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=57526ebf8da1749a29efebbb6b4691f3xi6tx> from <GET https://maoyan.com/board/4?offset=20>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=a67df440f8b095bc96a2955b283932212nsak> from <GET https://maoyan.com/board/4?offset=40>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=8022cdded6eed274fd9db9c0ae05c42dnq3oy> from <GET https://maoyan.com/board/4?offset=30>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=92483922e5d4a5774e27861cfadccfd2wdsqn> from <GET https://maoyan.com/board/4?offset=80>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=b8468f848431cfc05630070ac16e81e41pgk7> from <GET https://maoyan.com/board/4?offset=90>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=b8468f848431cfc05630070ac16e81e4jpimt> from <GET https://maoyan.com/board/4?offset=70>
+2020-12-12 15:32:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=5e7b7dc9fccff4fb86181fb51a12a78coptwf> from <GET https://maoyan.com/board/4?offset=60>
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=75085789fbb1f61813bf9ea79d969a83arvtt> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=b8468f848431cfc05630070ac16e81e41pgk7> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=57526ebf8da1749a29efebbb6b4691f3xi6tx> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=8022cdded6eed274fd9db9c0ae05c42dnq3oy> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=4810342c5855d6e99e728ebf9ef30f80gmr2n> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=5e7b7dc9fccff4fb86181fb51a12a78coptwf> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=a67df440f8b095bc96a2955b283932212nsak> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=64846830ba1344015a6548cb7a2be948ycla5> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=92483922e5d4a5774e27861cfadccfd2wdsqn> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.maoyan.com/verify?redirectURL=https%3A%2F%2Fmaoyan.com%2Fboard%2F4&requestCode=b8468f848431cfc05630070ac16e81e4jpimt> (referer: None)
+2020-12-12 15:32:53 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-12-12 15:32:53 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7009,
+ 'downloader/request_count': 20,
+ 'downloader/request_method_count/GET': 20,
+ 'downloader/response_bytes': 24140,
+ 'downloader/response_count': 20,
+ 'downloader/response_status_count/200': 10,
+ 'downloader/response_status_count/302': 10,
+ 'elapsed_time_seconds': 0.466791,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 12, 12, 7, 32, 53, 819593),
+ 'log_count/DEBUG': 20,
+ 'log_count/INFO': 10,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 20,
+ 'scheduler/dequeued/memory': 20,
+ 'scheduler/enqueued': 20,
+ 'scheduler/enqueued/memory': 20,
+ 'start_time': datetime.datetime(2020, 12, 12, 7, 32, 53, 352802)}
+2020-12-12 15:32:53 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-12-12 15:33:43 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: Maoyan)
+2020-12-12 15:33:43 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)], pyOpenSSL 20.0.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.2.1, Platform Windows-10-10.0.18362-SP0
+2020-12-12 15:33:43 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-12-12 15:33:43 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Maoyan',
+ 'LOG_FILE': 'guazi.log',
+ 'NEWSPIDER_MODULE': 'Maoyan.spiders',
+ 'SPIDER_MODULES': ['Maoyan.spiders']}
+2020-12-12 15:33:43 [scrapy.extensions.telnet] INFO: Telnet Password: 2565055f8762077c
+2020-12-12 15:33:43 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2020-12-12 15:33:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-12-12 15:33:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-12-12 15:33:44 [scrapy.middleware] INFO: Enabled item pipelines:
+['Maoyan.pipelines.MaoyanPipeline']
+2020-12-12 15:33:44 [scrapy.core.engine] INFO: Spider opened
+2020-12-12 15:33:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-12-12 15:33:44 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=0> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=50> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=20> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=10> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=60> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=30> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=70> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=40> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=80> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '我不是药神',
+ 'star': '<p class="star">\n                主演：徐峥,周一围,王传君\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-07-05</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '肖申克的救赎',
+ 'star': '<p class="star">\n'
+         '                主演：蒂姆·罗宾斯,摩根·弗里曼,鲍勃·冈顿\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-09-10(加拿大)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '绿皮书',
+ 'star': '<p class="star">\n'
+         '                主演：维果·莫腾森,马赫沙拉·阿里,琳达·卡德里尼\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-03-01</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '海上钢琴师',
+ 'star': '<p class="star">\n'
+         '                主演：蒂姆·罗斯,比尔·努恩,克兰伦斯·威廉姆斯三世\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-11-15</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '哪吒之魔童降世',
+ 'star': '<p class="star">\n                主演：吕艳婷,囧森瑟夫,瀚墨\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-07-26</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '小偷家族',
+ 'star': '<p class="star">\n                主演：中川雅也,安藤樱,松冈茉优\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-08-03</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '霸王别姬',
+ 'star': '<p class="star">\n                主演：张国荣,张丰毅,巩俐\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1993-07-26</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '美丽人生',
+ 'star': '<p class="star">\n'
+         '                主演：罗伯托·贝尼尼,朱斯蒂诺·杜拉诺,赛尔乔·比尼·布斯特里克\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2020-01-03</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '盗梦空间',
+ 'star': '<p class="star">\n'
+         '                主演：莱昂纳多·迪卡普里奥,渡边谦,约瑟夫·高登-莱维特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-09-01</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=0>
+{'name': '这个杀手不太冷',
+ 'star': '<p class="star">\n'
+         '                主演：让·雷诺,加里·奥德曼,娜塔莉·波特曼\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-09-14(法国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://maoyan.com/board/4?offset=90> (referer: None)
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '天使爱美丽',
+ 'star': '<p class="star">\n'
+         '                主演：奥黛丽·塔图,马修·卡索维茨,吕菲斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2001-04-25(比利时)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '让子弹飞',
+ 'star': '<p class="star">\n                主演：姜文,周润发,葛优\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-12-16</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '飞屋环游记',
+ 'star': '<p class="star">\n'
+         '                主演：爱德华·阿斯纳,乔丹·长井,鲍勃·彼德森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2009-08-04</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '乱世佳人',
+ 'star': '<p class="star">\n'
+         '                主演：费雯·丽,克拉克·盖博,奥利维娅·德哈维兰\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1939-12-15(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '菊次郎的夏天',
+ 'star': '<p class="star">\n                主演：北野武,关口雄介,岸本 加世子\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2020-09-25</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '一一',
+ 'star': '<p class="star">\n                主演：吴念真,金燕玲,李凯莉\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-07-28(中国台湾)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '美丽心灵',
+ 'star': '<p class="star">\n'
+         '                主演：罗素·克劳,詹妮弗·康纳利,艾德·哈里斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2001-12-13(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '大话西游之大圣娶亲',
+ 'star': '<p class="star">\n                主演：周星驰,朱茵,莫文蔚\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-10-24</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '蝴蝶效应',
+ 'star': '<p class="star">\n'
+         '                主演：阿什顿·库彻,约翰·帕特里克·阿梅多利,艾米·斯马特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2004-01-23(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=50>
+{'name': '消失的爱人',
+ 'star': '<p class="star">\n'
+         '                主演：本·阿弗莱克,裴淳华,尼尔·帕特里克·哈里斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-09-26(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '何以为家',
+ 'star': '<p class="star">\n'
+         '                主演：赞恩·阿尔·拉菲亚,约丹诺斯·希费罗,博鲁瓦蒂夫·特雷杰·班科尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-04-29</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '少年派的奇幻漂流',
+ 'star': '<p class="star">\n                主演：苏拉·沙玛,伊尔凡·可汗,塔布\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2012-11-22</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '忠犬八公的故事',
+ 'star': '<p class="star">\n                主演：Forest,理查·基尔,琼·艾伦\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2009-06-13(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '当幸福来敲门',
+ 'star': '<p class="star">\n'
+         '                主演：威尔·史密斯,贾登·史密斯,坦迪·牛顿\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-01-17</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '情书',
+ 'star': '<p class="star">\n                主演：中山美穗,丰川悦司,范文雀\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1999-03</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '放牛班的春天',
+ 'star': '<p class="star">\n'
+         '                主演：热拉尔·朱尼奥,让-巴蒂斯特·莫尼耶,玛丽·布奈尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2004-10-16</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '泰坦尼克号',
+ 'star': '<p class="star">\n'
+         '                主演：莱昂纳多·迪卡普里奥,凯特·温丝莱特,比利·赞恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1998-04-03</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '龙猫',
+ 'star': '<p class="star">\n                主演：秦岚,糸井重里,岛本须美\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-12-14</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '复仇者联盟4：终局之战',
+ 'star': '<p class="star">\n'
+         '                主演：小罗伯特·唐尼,克里斯·埃文斯,马克·鲁法洛\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-04-24</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=20>
+{'name': '熔炉',
+ 'star': '<p class="star">\n                主演：孔刘,郑有美,金智英\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-09-22(韩国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '怦然心动',
+ 'star': '<p class="star">\n'
+         '                主演：玛德琳·卡罗尔,卡兰·麦克奥利菲,艾丹•奎因\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-07-26(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '星际穿越',
+ 'star': '<p class="star">\n'
+         '                主演：马修·麦康纳,安妮·海瑟薇,杰西卡·查斯坦\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-11-12</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '千与千寻',
+ 'star': '<p class="star">\n                主演：柊瑠美,周冬雨,入野自由\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-06-21</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '阿甘正传',
+ 'star': '<p class="star">\n'
+         '                主演：汤姆·汉克斯,罗宾·怀特,加里·西尼斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-07-06(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '触不可及',
+ 'star': '<p class="star">\n'
+         '                主演：弗朗索瓦·克鲁塞,奥玛·希,安娜·勒尼\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-11-02(法国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '楚门的世界',
+ 'star': '<p class="star">\n'
+         '                主演：金·凯瑞,劳拉·琳妮,诺亚·艾默里奇\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1998(罗马尼亚)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '寻梦环游记',
+ 'star': '<p class="star">\n'
+         '                主演：安东尼·冈萨雷斯,本杰明·布拉特,盖尔·加西亚·贝纳尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-11-24</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '辛德勒的名单',
+ 'star': '<p class="star">\n'
+         '                主演：连姆·尼森,拉尔夫·费因斯,本·金斯利\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1993-11-30(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '小丑',
+ 'star': '<p class="star">\n'
+         '                主演：华金·菲尼克斯,罗伯特·德尼罗,亚历克·鲍德温\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-10-04(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=10>
+{'name': '摔跤吧！爸爸',
+ 'star': '<p class="star">\n'
+         '                主演：阿米尔·汗,沙克希·坦沃,法缇玛·萨那·纱卡\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-05-05</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '罗马假日',
+ 'star': '<p class="star">\n'
+         '                主演：格利高里·派克,奥黛丽·赫本,埃迪·艾伯特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1953-08-20(意大利)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '布达佩斯大饭店',
+ 'star': '<p class="star">\n'
+         '                主演：拉尔夫·费因斯,托尼·雷沃罗利,西尔莎·罗南\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2014-06-14</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '海边的曼彻斯特',
+ 'star': '<p class="star">\n'
+         '                主演：卡西·阿弗莱克,卢卡斯·赫奇斯,米歇尔·威廉姆斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-08-25</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '爱在黎明破晓前',
+ 'star': '<p class="star">\n'
+         '                主演：伊桑·霍克,朱莉·德尔佩,安德莉亚·埃克特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1995-01-27(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '七宗罪',
+ 'star': '<p class="star">\n'
+         '                主演：布拉德·皮特,摩根·弗里曼,格温妮斯·帕特洛\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1995-09-22(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '阿凡达',
+ 'star': '<p class="star">\n'
+         '                主演：萨姆·沃辛顿,佐伊·索尔达娜,米歇尔·罗德里格兹\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-01-04</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '超脱',
+ 'star': '<p class="star">\n'
+         '                主演：艾德里安·布洛迪,马西娅·盖伊·哈登,詹姆斯·肯恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-04-25(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '海蒂和爷爷',
+ 'star': '<p class="star">\n'
+         '                主演：阿努克·斯特芬,布鲁诺·甘茨,昆林·艾格匹\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-05-16</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '釜山行',
+ 'star': '<p class="star">\n                主演：孔刘,郑有美,马东锡\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2016-05-13(法国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=60>
+{'name': '春光乍泄',
+ 'star': '<p class="star">\n                主演：张国荣,梁朝伟,张震\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1997-05-17(法国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '三傻大闹宝莱坞',
+ 'star': '<p class="star">\n                主演：阿米尔·汗,黄渤,卡琳娜·卡普\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2011-12-08</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '教父',
+ 'star': '<p class="star">\n'
+         '                主演：马龙·白兰度,阿尔·帕西诺,詹姆斯·肯恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-04-18</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '被嫌弃的松子的一生',
+ 'star': '<p class="star">\n                主演：中谷美纪,永山瑛太,伊势谷友介\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2006-05-27(日本)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '头号玩家',
+ 'star': '<p class="star">\n'
+         '                主演：泰伊·谢里丹,奥利维亚·库克,本·门德尔森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-03-30</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '三块广告牌',
+ 'star': '<p class="star">\n'
+         '                主演：弗兰西斯·麦克多蒙德,伍迪·哈里森,山姆·洛克威尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-03-02</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '看不见的客人',
+ 'star': '<p class="star">\n'
+         '                主演：马里奥·卡萨斯,阿娜·瓦格纳,何塞·科罗纳多\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-09-15</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '疯狂动物城',
+ 'star': '<p class="star">\n'
+         '                主演：金妮弗·古德温,杰森·贝特曼,伊德瑞斯·艾尔巴\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2016-03-04</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '活着',
+ 'star': '<p class="star">\n                主演：葛优,巩俐,牛犇\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-05-17(法国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '天堂电影院',
+ 'star': '<p class="star">\n'
+         '                主演：菲利浦·诺瓦雷,赛尔乔·卡斯特利托,蒂兹亚娜·罗达托\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1988-09-29(意大利)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=30>
+{'name': '死亡诗社',
+ 'star': '<p class="star">\n'
+         '                主演：罗宾·威廉姆斯,伊桑·霍克,柯特伍德·史密斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1989-06-02(加拿大)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '波西米亚狂想曲',
+ 'star': '<p class="star">\n'
+         '                主演：拉米·马雷克,本·哈迪,约瑟夫•梅泽罗\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-03-22</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '爱在日落黄昏时',
+ 'star': '<p class="star">\n'
+         '                主演：伊桑·霍克,朱莉·德尔佩,弗农·多布切夫\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-04-20</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '天空之城',
+ 'star': '<p class="star">\n                主演：寺田农,鹫尾真知子,龟山助清\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1992-05-01</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '辩护人',
+ 'star': '<p class="star">\n                主演：宋康昊,郭度沅,吴达洙\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2013-12-18(韩国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '无间道',
+ 'star': '<p class="star">\n                主演：刘德华,梁朝伟,黄秋生\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-09-05</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '剪刀手爱德华',
+ 'star': '<p class="star">\n'
+         '                主演：约翰尼·德普,薇诺娜·瑞德,黛安娜·威斯特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1990-12-06(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '网络谜踪',
+ 'star': '<p class="star">\n                主演：约翰·赵,米切尔·拉,黛博拉·梅辛\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-12-14</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '穿条纹睡衣的男孩',
+ 'star': '<p class="star">\n'
+         '                主演：阿沙·巴特菲尔德,维拉·法梅加,大卫·休里斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-08-28(英国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '心灵捕手',
+ 'star': '<p class="star">\n'
+         '                主演：罗宾·威廉姆斯,马特·达蒙,明妮·德里弗\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1997-12-05(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=70>
+{'name': '重庆森林',
+ 'star': '<p class="star">\n                主演：梁朝伟,王菲,金城武\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-07-14(中国香港)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '请以你的名字呼唤我',
+ 'star': '<p class="star">\n'
+         '                主演：提莫西·查拉梅,艾米·汉莫,迈克尔·斯图巴\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2017-01-22(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '闻香识女人',
+ 'star': '<p class="star">\n'
+         '                主演：阿尔·帕西诺,克里斯·奥唐纳,加布里埃尔·安瓦尔\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1992-12-23(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '机器人总动员',
+ 'star': '<p class="star">\n'
+         '                主演：本·贝尔特,艾丽莎·奈特,杰夫·格尔林\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-06-27(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '末代皇帝',
+ 'star': '<p class="star">\n                主演：尊龙,陈冲,彼得·奥图尔\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1987-10-04(日本)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '西西里的美丽传说',
+ 'star': '<p class="star">\n'
+         '                主演：莫妮卡·安娜·玛丽亚·贝鲁奇,朱塞佩·苏尔法罗,玛蒂尔德·皮亚纳\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2000-10-26(意大利)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '窃听风暴',
+ 'star': '<p class="star">\n'
+         '                主演：乌尔里希·穆埃,塞巴斯蒂安·科赫,马蒂娜·格德克\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2006-03-23(德国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '本杰明·巴顿奇事',
+ 'star': '<p class="star">\n'
+         '                主演：布拉德·皮特,凯特·布兰切特,塔拉吉·P·汉森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-12-25(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '飞越疯人院',
+ 'star': '<p class="star">\n'
+         '                主演：杰克·尼科尔森,路易丝·弗莱彻,威尔·萨姆森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1975-11-19(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '美国往事',
+ 'star': '<p class="star">\n'
+         '                主演：罗伯特·德尼罗,詹姆斯·伍兹,伊丽莎白·麦戈文\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-04-23</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=40>
+{'name': '搏击俱乐部',
+ 'star': '<p class="star">\n'
+         '                主演：爱德华·哈里森·诺顿,布拉德·皮特,海伦娜·伯翰·卡特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1999-09-10(意大利)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '素媛',
+ 'star': '<p class="star">\n                主演：李甄,薛耿求,严智苑\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2013-10-02(韩国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '蜘蛛侠：平行宇宙',
+ 'star': '<p class="star">\n'
+         '                主演：沙梅克·摩尔,彭昱畅,杰克·M·约翰森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-12-21</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '断背山',
+ 'star': '<p class="star">\n'
+         '                主演：希斯·莱杰,杰克·吉伦哈尔,米歇尔·威廉姆斯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2005-09-02(意大利)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '致命魔术',
+ 'star': '<p class="star">\n'
+         '                主演：休·杰克曼,克里斯蒂安·贝尔,迈克尔·凯恩\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2006-10-17(意大利)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '蝙蝠侠：黑暗骑士',
+ 'star': '<p class="star">\n'
+         '                主演：克里斯蒂安·贝尔,希斯·莱杰,阿伦·伊克哈特\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2008-07-14(阿根廷)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '十二怒汉',
+ 'star': '<p class="star">\n'
+         '                主演：亨利·方达,李·科布,马丁·鲍尔萨姆\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1957-04-13(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '两杆大烟枪',
+ 'star': '<p class="star">\n'
+         '                主演：杰森·弗莱明,德克斯特·弗莱彻,杰森•斯坦森\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1998-08-28(英国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '控方证人',
+ 'star': '<p class="star">\n'
+         '                主演：泰隆·鲍华,玛琳·黛德丽,查尔斯·劳顿\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：1957-12-17(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '大鱼',
+ 'star': '<p class="star">\n'
+         '                主演：伊万·麦克格雷格,阿尔伯特·芬尼,杰西卡·兰格\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-12-04(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=80>
+{'name': '1917',
+ 'star': '<p class="star">\n'
+         '                主演：乔治·麦凯,迪恩·查尔斯·查普曼,马克·斯特朗\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2020-08-07</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '血战钢锯岭',
+ 'star': '<p class="star">\n'
+         '                主演：安德鲁·加菲尔德,雨果·维文,卢克·布雷西\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2016-12-08</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '奇迹男孩',
+ 'star': '<p class="star">\n'
+         '                主演：雅各布·特瑞布雷,朱莉娅·罗伯茨,欧文·威尔逊\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2018-01-19</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '真爱至上',
+ 'star': '<p class="star">\n                主演：休·格兰特,比尔·奈伊,连姆·尼森\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-11-21(英国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '猫鼠游戏',
+ 'star': '<p class="star">\n'
+         '                主演：莱昂纳多·迪卡普里奥,汤姆·汉克斯,克里斯托弗·沃肯\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2003-04-11</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '饮食男女',
+ 'star': '<p class="star">\n                主演：郎雄,吴倩莲,杨贵媚\n        </p>',
+ 'time': '<p class="releasetime">上映时间：1994-08-03(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '时空恋旅人',
+ 'star': '<p class="star">\n'
+         '                主演：瑞秋·麦克亚当斯,多姆纳尔·格里森,比尔·奈伊\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2013-09-04(英国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '模仿游戏',
+ 'star': '<p class="star">\n'
+         '                主演：本尼迪克特·康伯巴奇,凯拉·奈特莉,马修·古迪\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2015-07-21</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '黑天鹅',
+ 'star': '<p class="star">\n'
+         '                主演：娜塔莉·波特曼,文森特·卡索,米拉·库妮丝\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2010-09-01(意大利)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '爱尔兰人',
+ 'star': '<p class="star">\n'
+         '                主演：罗伯特·德尼罗,阿尔·帕西诺,乔·佩西\n'
+         '        </p>',
+ 'time': '<p class="releasetime">上映时间：2019-11-27(美国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://maoyan.com/board/4?offset=90>
+{'name': '鬼子来了',
+ 'star': '<p class="star">\n                主演：姜文,姜宏波,陈强\n        </p>',
+ 'time': '<p class="releasetime">上映时间：2000-05-13(法国)</p>'}
+2020-12-12 15:33:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-12-12 15:33:45 [scrapy.extensions.feedexport] INFO: Stored csv feed (100 items) in: guazi.csv
+2020-12-12 15:33:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3019,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 66435,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'elapsed_time_seconds': 0.467368,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 12, 12, 7, 33, 45, 390974),
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 110,
+ 'log_count/INFO': 11,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2020, 12, 12, 7, 33, 44, 923606)}
+2020-12-12 15:33:45 [scrapy.core.engine] INFO: Spider closed (finished)

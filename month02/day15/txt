@@ -1,0 +1,6 @@
+查找创建的视图
+show full tables in stu(数据库名字) where table type like 'view';
+查找创建的存储过程
+select name from mysql.proc where db='stu'(数据库名字) and type='procedure';
+查找创建的函数
+select name from mysql.proc where db='stu'(数据库名字) and type='function';

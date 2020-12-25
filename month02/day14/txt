@@ -1,0 +1,13 @@
+级联动作
+alter table person add constraint dept_fk
+foreign key(dept_id) references dept(id);
+restrict(默认) : on delete restrict on update restrict
+当主表删除记录时，如果从表中有相关联记录则不允许主表删除
+当主表更改主键字段值时，如果从表有相关记录则不允许更改
+cascade ：数据级联更新 on delete cascade on update cascade
+当主表删除记录或更改被参照字段的值时,从表会级联更新
+set null : on delete set null on update set null
+当主表删除记录时，从表外键字段值变为null
+当主表更改主键字段值时，从表外键字段值变为null
+no action
+同 restrict，都是立即检查外键限制

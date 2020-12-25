@@ -1,0 +1,61 @@
+
+"""
+   python实现单链表
+"""
+class Node:
+    """
+      结点类
+    """
+    def __init__(self, value):
+        self.value=value
+        self.next = None
+
+class Singlelinklist:
+    """  单链表类"""
+    def __init__(self, node=None):
+        self.head = node
+
+    def is_empty(self):
+        """判断链表是否为空"""
+        return self.head == None
+
+    def length(self):
+        """获取链表的长度"""
+        current = self.head
+        count = 0
+        while current!= None:
+            count += 1
+            current = current.next
+        return count
+    def travel(self):
+        """遍历整个链表"""
+        current = self.head
+        while current != None:
+            print(current.value,end=" ")
+            current = current.next
+        print()
+    def add(self,value):
+        """在链表头部添加结点"""
+        if self.is_empty():
+            self.head = Node(value)
+        else:
+            node=Node(value)
+            node.next = self.head
+            self.head = node
+    def insert(self,pos,value):
+        """
+           在指定位置添加元素
+        :param pos: 指定添加的位置
+        :param value: 添加的值
+        :return:
+        """
+        if pos < 0:
+            self.add(value)
+        elif pos > self.length():
+            self.append(value)
+        else:
+            node = Node(value)
+            pre = self.head
+            count = 0
+            while pos-1 > count:
+                pre = pre.nex

@@ -1,0 +1,6 @@
+--创建数据库books
+--创建数据表book
+ --  id               title      author     price         publication  comment
+ --  int            varchar(50)  varchar()40  decimal(5,2)   varchar(60)    varchar(50)
+ --  primary key       not null    null        default 0               default 0
+ --  auto_increment

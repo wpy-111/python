@@ -1,0 +1,15 @@
+data={
+    "i": "query",
+    "from": "AUTO",
+    "to": "AUTO",
+    "smartresult": "dict",
+    "client": "fanyideskweb",
+    "salt": "16058733508675",
+    "sign": "b6ca043054de2917e04e35fab3456df2",
+    "lts": "1605873350867",
+    "bv": "b0ff5d17f404993192085bf8b1e93587",
+    "doctype": "json",
+    "version": "2.1",
+    "keyfrom": "fanyi.web",
+    "action": "FY_BY_REALTlME"
+}
