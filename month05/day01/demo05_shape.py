@@ -16,5 +16,10 @@ d = c.flatten()
 c[0] = 12
 print(d,d.shape)
 print(c)
+#就地变维
+c.shape = (2,4)
+c.resize(2,2,2)
+print(c)
+
 
 
