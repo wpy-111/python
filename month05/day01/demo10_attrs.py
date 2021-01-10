@@ -14,5 +14,7 @@ print(a.nbytes)#
 print(a.real)
 print(a.imag)
 print(a.T)
-
+print([element for element in a.flat])
+print(a.tolist())
+#列表推导式[i for i in range(1,10)]
 
