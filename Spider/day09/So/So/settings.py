@@ -89,5 +89,5 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 #路径
-IMAGES_STORE = 'F:/python代码/pachong/day09/So/images/'
+IMAGES_STORE = 'F:/python代码/Spider/day09/So/images/'
 

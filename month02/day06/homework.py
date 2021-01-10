@@ -1,7 +1,7 @@
 """
    使用Prcess创建两个子进程，同时复制一个文件，分别复制文件的前半部分和后半部分
 """
-ADDR = '/home/tarena/wpy/datastructure/day01/singlelink.py'
+ADDR = '/home/tarena/wpy/DataStructure/day01/singlelink.py'
 import os
 import multiprocessing as mp
 m = os.path.getsize(ADDR)
