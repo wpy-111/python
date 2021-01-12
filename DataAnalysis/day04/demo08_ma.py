@@ -39,6 +39,10 @@ mp.plot(datas[4:],ma5,color='orangered',label='MA-5')
 for i in range(closing_prices.size-9):
     ma10[i] = closing_prices[i:i+10].mean()
 mp.plot(datas[9:],ma10,color='green',label='MA-10')
+#  卷积绘制5日均线
+kernel = np.ones(5) / 5
+ma52 = np.convolve(closing_prices,kernel,mode='valid')
+mp.plot(datas[4:],ma52,color='blue',linewidth=7,alpha=0.4,label='MA-52')
 mp.legend()
 mp.tight_layout()
 mp.gcf().autofmt_xdate()
