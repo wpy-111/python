@@ -18,6 +18,7 @@ data=[
 ]
 ary3 = np.array(data,dtype='U3,3int32,int32')
 print(ary3,ary3.dtype)
+print(ary3.shape)
 print('-'*30)
 ary3 = np.array(data,dtype=[('name','str',2),('score','int32',3),('age','int32',1)])
 print(ary3)

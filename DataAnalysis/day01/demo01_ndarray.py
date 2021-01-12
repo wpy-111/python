@@ -7,6 +7,7 @@ import numpy as np
 #一维数组
 ary = np.array([1,5,6,56])
 print(ary,type(ary))
+print(ary.size)
 print(ary * 10)
 print(ary > 10)
 print(ary + ary)

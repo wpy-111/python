@@ -1,7 +1,6 @@
 """
     demo04_subplot.py  子图
 """
-import numpy as np
 import matplotlib.pyplot as mp
 mp.figure('Subplot',facecolor='lightgrey')
 for i in range(1,10):

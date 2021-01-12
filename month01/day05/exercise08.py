@@ -10,7 +10,7 @@ while True:
     day = int(input("请输入日"))
 #     for i in range(month-1):
 #         day01 +=typle[i]
-#     all=day01+day
+#     all=day01+day03
 #     print(all)
     total_day= sum(typle[:month-1])
     sum_day =total_day+day
