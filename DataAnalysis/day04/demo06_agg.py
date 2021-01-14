@@ -9,7 +9,7 @@ print(data)
 # 轴向汇总
 def func(data):
 
-    return np.mean(data),np.max(data),np.min(data),np.argmax(data)
+    return np.mean(data),np.max(data),np.min(data)
 result = np.apply_along_axis(func,0,data)
 print(result)
 

@@ -30,7 +30,7 @@ dates = datas.astype(md.datetime.datetime)
 mp.plot(datas,closing_prices,color='dodgerblue',linestyle='--',linewidth=2,
         alpha=0.8,label='closing prices')
 #基于线性预测理论 预测股票价格
-N = 6
+N = 4
 pre_prices = np.zeros(closing_prices.size-2*N)
 for j in range(pre_prices.size):
     A = np.zeros((N,N))
