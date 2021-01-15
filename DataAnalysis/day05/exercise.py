@@ -42,15 +42,20 @@ print(result)
 # mask04 = loss==0
 # mp.scatter(extre_flow[mask04],extre_time[mask04],s=50,label='time & flow',c=extre_flow[mask04],cmap='jet')
 #使用数学模型拟合上一题的数据分布，尝试通过用户额外流量（x）来预测额外剩余通话时间
-
-A = np.column_stack((extre_flow,np.zeros_like(extre_flow)))
-B = extre_time
-x = np.linalg.lstsq(A,B)[0]
-k,b = x[0],x[1]
-print(k,b)
-
-
-
+#
+# A = np.column_stack((extre_flow,np.ones_like(extre_flow)))
+# B = extre_time
+# x = np.linalg.lstsq(A,B)[0]
+# k,b = x[0],x[1]
+# y = k*500+b
+# print(y)
+#基于概率分布规律预测
+flow_m = np.mean(extre_flow)
+flow_s = np.std(extre_flow)
+time_m = np.mean(extre_time)
+time_s = np.std(extre_time)
+print(np.random.normal(flow_m,flow_s,10))
+print(np.random.normal(time_m,time_s,10))
 mp.grid(linestyle=':')
 mp.legend()
 mp.show()
