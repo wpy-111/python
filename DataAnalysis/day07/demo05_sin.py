@@ -23,10 +23,9 @@ mp.plot(x,y2,color='dodgerblue',alpha=1,linewidth=1,label='y2')
 mp.legend()
 mp.tight_layout()
 freqs = nf.fftfreq(len(y),x[1]-x[0])
+print(freqs)
 #abs求绝对值
 pow =np.abs(complex_ary)
-
-print(pow)
 mp.subplot(122)
 mp.title('Frequency Domain',fontsize=16)
 mp.xlabel('Frequency',fontsize=14)
