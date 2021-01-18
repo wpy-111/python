@@ -18,6 +18,7 @@ print('*'*50)
 data = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
         'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
 df = pd.DataFrame(data)
+print(df['one'])
 print(df[['one','two']])
 #dataframe列添加
 data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
@@ -49,6 +50,7 @@ print('--------------------------------------')
 print(df.iloc[[0,1]])
 print('--------------------------------------')
 print(df.loc[['a','b']])
+print(df.loc['a'])
 print('==================================================')
 #行添加 索引可以重复
 df = pd.DataFrame([['zs', 12], ['ls', 4]], index=[0, 1], columns = ['Name','Age'])
