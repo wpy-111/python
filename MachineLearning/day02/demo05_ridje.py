@@ -1,5 +1,5 @@
 """
-    岭回归
+    岭回归 Ridge
 """
 import sklearn.linear_model as lm
 import matplotlib.pyplot as mp
