@@ -1,5 +1,7 @@
 """
     多元逻辑回归
+    import sklearn.linear_model as lm
+    lm.LogisticRegression(solver='liblinear', C=1000)
 """
 
 import numpy as np

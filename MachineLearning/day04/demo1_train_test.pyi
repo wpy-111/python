@@ -1,5 +1,5 @@
 """
-    训练集测试集划分
+    训练集测试集划分 ms.train_test_split()
 """
 
 import numpy as np

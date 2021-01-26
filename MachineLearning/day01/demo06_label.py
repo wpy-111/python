@@ -1,5 +1,8 @@
 """
     标签编码 获取一组数据，针对这组字符串数据完成标签编码，输出结果
+    lbe = sp.LabelEncoder()
+    r =lbe.fit_transform(raw_samples)
+    r = lbe.inverse_transform(r)
 """
 import numpy as np
 import sklearn.preprocessing as sp

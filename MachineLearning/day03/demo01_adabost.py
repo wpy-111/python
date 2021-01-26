@@ -1,5 +1,9 @@
 """
     波士顿地区房屋价格 adaboost 正向激励
+    import sklearn.tree as st
+    import sklearn.ensemble as se
+    model = st.DecisionTreeRegressor(max_depth=5)
+    model = se.AdaBoostRegressor(model,n_estimators=400,random_state=7)
 """
 
 import numpy as np

@@ -1,10 +1,12 @@
 """
     加载模型
+    import pickle
+    model = pickle.load(f)
 """
 import sklearn.linear_model as lm
 import pandas as pd
 import matplotlib.pyplot as mp
-import  numpy as np
+import numpy as np
 data = np.loadtxt('./single.txt',delimiter=',',usecols=(0,1),unpack=False)
 #x 必须是二维数组，y必须是一维数组  一行一样本 一列一特征
 x = data[:,0].reshape(-1,1)

@@ -1,5 +1,7 @@
 """
     岭回归 Ridge
+    import sklearn.linear_model as lm
+    model1 = lm.Ridge(1000,max_iter=10000,fit_intercept=True)
 """
 import sklearn.linear_model as lm
 import matplotlib.pyplot as mp

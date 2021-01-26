@@ -1,5 +1,7 @@
 """
     逻辑回归模型
+    import sklearn.linear_model as lm
+    model = lm.LogisticRegression(C=1)
 """
 import numpy as np
 import matplotlib.pyplot as mp

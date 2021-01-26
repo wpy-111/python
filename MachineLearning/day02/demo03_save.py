@@ -1,5 +1,7 @@
 """
     保存模型
+    import pickle
+    pickle.dump(model,f)
 """
 import sklearn.linear_model as lm
 import pandas as pd

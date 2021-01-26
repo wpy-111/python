@@ -1,5 +1,7 @@
 """
     多项式回归
+    import sklearn.pipeline as pl
+    model = pl.make_pipeline(sp.PolynomialFeatures(10),lm.LinearRegression())
 """
 import numpy as np
 import sklearn.preprocessing as sp

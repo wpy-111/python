@@ -1,5 +1,7 @@
 """
     线性回归 基于sklearn
+    import sklearn.linear_model as lm
+    model = lm.LinearRegression()
 """
 import sklearn.linear_model as lm
 import pandas as pd

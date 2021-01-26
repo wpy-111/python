@@ -1,5 +1,6 @@
 """
-    随机森林   sklearn.ensemble    分析共享单车投放
+    随机森林   sklearn.ensemble  as se  分析共享单车投放
+    se.RandomForestRegressor()
 """
 import sklearn.ensemble as se
 import pandas as pd
