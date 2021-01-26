@@ -5,7 +5,7 @@ import numpy as np
 import sklearn.naive_bayes as nb
 import matplotlib.pyplot as mp
 import sklearn.model_selection as ms
-data = np.loadtxt('../data/multiple1.txt', unpack=False, dtype='U20', delimiter=',')
+data = np.loadtxt('multiple1.txt', unpack=False, dtype='U20', delimiter=',')
 print(data.shape)
 x = np.array(data[:, :-1], dtype=float)
 y = np.array(data[:, -1], dtype=float)

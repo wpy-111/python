@@ -1,19 +1,20 @@
 """
-    混淆矩阵  sm.confusion_matrix(test_y,pre_y)
+    置信概率
+    model = svm.SVC(kernel='rbf',C=600,gamma=0.01,probability=True)
+    model.predict_proba(样本)
 """
 import numpy as np
-import sklearn.naive_bayes as nb
 import matplotlib.pyplot as mp
 import sklearn.model_selection as ms
-data = np.loadtxt('multiple1.txt', unpack=False, dtype='U20', delimiter=',')
+import sklearn.svm as svm
+data = np.loadtxt('multiple2.txt', unpack=False, dtype='U20', delimiter=',')
 print(data.shape)
 x = np.array(data[:, :-1], dtype=float)
 y = np.array(data[:, -1], dtype=float)
 train_x,test_x,train_y,test_y = ms.train_test_split(x,y,test_size=0.25,random_state=7)
-# 创建高斯分布朴素贝叶斯分类器
-model = nb.GaussianNB()
-model.fit(train_x, train_y)
-#针对测试样本进行测试，看一下每一测试样本的预测输出
+#创建svm模型
+model = svm.SVC(kernel='rbf',C=600,gamma=0.01,probability=True)
+model.fit(train_x,train_y)
 pre_y = model.predict(test_x)
 print((pre_y==test_y).sum()/test_y.size)#精确度
 l, r = x[:, 0].min() - 1, x[:, 0].max() + 1
@@ -23,10 +24,6 @@ grid_x, grid_y = np.meshgrid(np.linspace(l, r, n), np.linspace(b, t, n))
 samples = np.column_stack((grid_x.ravel(), grid_y.ravel()))
 grid_z = model.predict(samples)
 grid_z = grid_z.reshape(grid_x.shape)
-#输出混淆矩阵
-import sklearn.metrics as sm
-m = sm.confusion_matrix(test_y,pre_y)
-
 
 mp.figure('Naive Bayes Classification', facecolor='lightgray')
 mp.title('Naive Bayes Classification', fontsize=20)
@@ -35,4 +32,20 @@ mp.ylabel('y', fontsize=14)
 mp.tick_params(labelsize=10)
 mp.pcolormesh(grid_x, grid_y, grid_z, cmap='gray')
 mp.scatter(x[:, 0], x[:, 1], c=y, cmap='brg', s=80)
+#新增样本，输出新增样本的置信概率
+prob_x = np.array([
+    [2, 1.5],
+    [8, 9],
+    [4.8, 5.2],
+    [4, 4],
+    [2.5, 7],
+    [7.6, 2],
+    [5.4, 5.9]])
+pre_y = model.predict(prob_x)
+probs = model.predict_proba(prob_x)
+print(pre_y)
+print(probs)
+mp.legend()
 mp.show()
+
+

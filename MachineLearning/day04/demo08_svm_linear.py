@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as mp
 import sklearn.model_selection as ms
 import sklearn.svm as svm
-data = np.loadtxt('../data/multiple2.txt', unpack=False, dtype='U20', delimiter=',')
+data = np.loadtxt('multiple2.txt', unpack=False, dtype='U20', delimiter=',')
 print(data.shape)
 x = np.array(data[:, :-1], dtype=float)
 y = np.array(data[:, -1], dtype=float)
