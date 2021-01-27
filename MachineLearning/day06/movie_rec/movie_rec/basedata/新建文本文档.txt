@@ -1,0 +1,34 @@
+
+最原始数据
+m_all_info.csv 
+
+初步整理：
+m_info.csv
+m_name.csv
+u_score.csv  用户对电影的评分
+   电影id   用户id   评分   电影类型
+
+
+初步分析结论数据： middata
+m_type.csv
+tag.csv  自己创建的标签
+tag_table.csv 记录每位用户的行为画像
+u_idx.csv  记录id与索引的对应关系
+
+
+电影推荐算法：
+1。基于电影的协同过滤算法：
+
+
+
+2。基于用户画像算法：
+
+
+
+
+
+
+
+
+
+
