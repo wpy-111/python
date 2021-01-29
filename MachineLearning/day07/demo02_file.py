@@ -8,7 +8,7 @@ import sklearn.naive_bayes as nb
 import sklearn.metrics as sm
 import sklearn.model_selection as ms
 train = sd.load_files('20news',encoding='latin1',random_state=7,shuffle=True)
-print(train.data[0])#输入集
+print(type(train.data))#输入集
 print(train.target[0])#每个文件的所属类别
 #得到tfdif矩阵
 cv = ft.CountVectorizer()
