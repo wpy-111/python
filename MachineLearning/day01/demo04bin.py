@@ -7,7 +7,7 @@ raw_samples = np.array([
     [17., 100., 4000],
     [20., 80., 5000],
     [23., 75., 5500]])
-#设置阈值  小于等于80的值都归0
+#设置阈值  小于等于80的值都归0 大于80都是1
 bin = sp.Binarizer(threshold=80)
 r = bin.transform(raw_samples)
 print(r)
