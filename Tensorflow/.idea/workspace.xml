@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18542785-e45d-4deb-be12-351ce7f36484" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day01/01tensor_arr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/02tensor_isinstance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/03_convert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/04variable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/05_tensor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/06_fill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/07_random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/08_shuffle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day01/09_loss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MachineLearning/day04/car_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../MachineLearning/day04/car_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tensorflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tensorflow.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/10_keras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/single.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/01_index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/09_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/day01/09_loss.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,14 +34,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day01" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\python代码\Tensorflow\day01" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\python代码\Tensorflow\day01" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.09_loss">
-    <configuration name="01tensor_arr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.01_index">
+    <configuration name="01_index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Tensorflow" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,53 +53,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\python代码\Tensorflow\01tensor_arr.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="05_tensor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Tensorflow" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\python代码\Tensorflow\day01\05_tensor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="06_fill" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Tensorflow" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day01" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/06_fill.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day02/01_index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,13 +129,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="10_keras" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Tensorflow" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day01/10_keras.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01_index" />
+        <item itemvalue="Python.10_keras" />
         <item itemvalue="Python.09_loss" />
         <item itemvalue="Python.08_shuffle" />
         <item itemvalue="Python.07_random" />
-        <item itemvalue="Python.06_fill" />
-        <item itemvalue="Python.05_tensor" />
       </list>
     </recent_temporary>
   </component>
@@ -200,21 +174,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1612337290689">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1612358148055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612337290689" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1612337290688">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1612358148055" />
+    <state width="1515" height="256" key="GridCell.Tab.0.bottom" timestamp="1612363009053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612337290688" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1612337290688">
+    <state width="1515" height="256" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612363009053" />
+    <state width="1515" height="256" key="GridCell.Tab.0.center" timestamp="1612363009053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612337290688" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1612337290688">
+    <state width="1515" height="256" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612363009053" />
+    <state width="1515" height="256" key="GridCell.Tab.0.left" timestamp="1612363009053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612337290688" />
+    <state width="1515" height="256" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612363009053" />
+    <state width="1515" height="256" key="GridCell.Tab.0.right" timestamp="1612363009053">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="256" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612363009053" />
   </component>
 </project>
