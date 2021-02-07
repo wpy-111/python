@@ -1,6 +1,8 @@
 import os
+import paddle
 import numpy as np
 import cv2 as cv
+import paddle.fluid as fluid
 
 def transform_img(img):
     #图形的伸缩
@@ -23,8 +25,6 @@ def data_loader(datadir,batch_size=10,model='train'):
             filepath = os.path.join(datadir,name)
             print(filepath)
             img = cv.imread(filepath)
-            cv.imshow('img',img)
-            cv.waitKey()
             img = transform_img(img)
             if name[0] == 'H' or name[0] =='N':
                 label = 0
@@ -46,8 +46,23 @@ def data_loader(datadir,batch_size=10,model='train'):
             yield imgs_arry, label_arry
     return reader
 
-
-
-train_loader = data_loader('..\..\..\智能汽车数据集\infer')
-data_reader = train_loader()
-print(next(data_reader))
+def train(model):
+    with paddle.fluid.dygraph.guard():
+        print("starting training")
+        model.train()
+        epoches = 5
+        opt = paddle.fluid.optimizer.Momentum(learning_rate=0.001,momentum=0.9,parameter_list=model.paramters())
+        train_loader = data_loader('..\\..\\..\\智能汽车数据集\\infer')
+        for epoch in range(epoches):
+            for batch_id,data in enumerate(train_loader()):
+                x_data,y_data = data
+                img = paddle.fluid.dygraph.to_variable(x_data)
+                label = paddle.fluid.dygraph.to_variable(y_data)
+                pre = model(img)
+                loss = paddle.fluid.layers.sigmoid_cross_entropy_with_logits(pre,label)
+                avg_loss = paddle.fluid.layers.mean(loss)
+                if batch_id %10 ==0:
+                    print("epoch:{},batch_id:{},loss is {}".format(epoch,batch_id,avg_loss.numpy()))
+                avg_loss.backward()
+                opt.minimize(avg_loss)
+                model.clear_gradients()
