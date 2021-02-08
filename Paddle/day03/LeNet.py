@@ -2,7 +2,12 @@
 import paddle
 import numpy as np
 from paddle.nn import Conv2D, MaxPool2D, Linear
-
+import paddle
+# from paddle.nn import Conv2D, MaxPool2D, BatchNorm, Linear
+from paddle.nn import Conv2D, MaxPool2D, BatchNorm2D, Linear
+from paddle.fluid.dygraph import to_variable
+import paddle.fluid.dygraph as dygraph
+import paddle.fluid as fluid
 ## 组网
 import paddle.nn.functional as F
 
@@ -40,3 +45,11 @@ class LeNet(paddle.nn.Layer):
         x = F.sigmoid(x)
         x = self.fc2(x)
         return x
+with dygraph.guard():
+    with dygraph.guard(fluid.CUDAPlace(0)):
+        data = np.ones((3,512,512)).astype('float32')
+        data = to_variable(data)
+        model = LeNet()
+        model.eval()
+        pre = model(data)
+        print(pre.numpy().shape)
