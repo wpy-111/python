@@ -5,7 +5,6 @@ import numpy as np
 import paddle
 import paddle.nn as nn
 import paddle.nn.functional as F
-
 # ResNet中使用了BatchNorm层，在卷积层的后面加上BatchNorm以提升数值稳定性
 # 定义卷积批归一化块
 # 定义卷积批归一化块

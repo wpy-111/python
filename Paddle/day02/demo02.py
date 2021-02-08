@@ -1,5 +1,6 @@
 import cv2 as cv
 import os
+
 dir = '../day01'
 list = os.listdir(dir)
 for i in list:
