@@ -43,15 +43,20 @@ class Stack:
             return 0
         count = 0
         cur = self.top
-        while not cur:
-            cur = cur.next()
-            count += 1 `
+        while cur is not None:
+            cur = cur.next
+            count += 1
 
-
+        return count
 
 if __name__ == '__main__':
-
-
+    s = Stack()
+    s.push(100)
+    s.push(200)
+    s.push(300)
+    print(s.size())
+    print(s.pop())
+    print(s.size())
 
 
 
