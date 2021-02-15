@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ec26203-9060-4c59-b8fd-45a0d10f2ef1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day03/03_queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/04_queuelink.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/05_signllinkecirculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/2stacktoqueue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/02_stacklink.py" beforeDir="false" afterPath="$PROJECT_DIR$/day03/02_stacklink.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/04_queuelink.py" beforeDir="false" afterPath="$PROJECT_DIR$/day03/04_queuelink.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,28 +45,7 @@
       <recent name="$PROJECT_DIR$/day01/commin" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.04_queuelink">
-    <configuration name="01_stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="datastructure" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day03" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day03/01_stack.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.2stacktoqueue">
     <configuration name="02_stacklink" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="datastructure" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="quicksort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="05_signllinkecirculation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="datastructure" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,12 +117,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day02/quicksort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day03/05_signllinkecirculation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2stacktoqueue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="datastructure" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day04/2stacktoqueue.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2stacktoqueue" />
+        <item itemvalue="Python.05_signllinkecirculation" />
         <item itemvalue="Python.04_queuelink" />
         <item itemvalue="Python.03_queue" />
         <item itemvalue="Python.02_stacklink" />
-        <item itemvalue="Python.01_stack" />
-        <item itemvalue="Python.quicksort" />
       </list>
     </recent_temporary>
   </component>
@@ -192,25 +191,41 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="184" key="GridCell.Tab.0.bottom" timestamp="1613381031659">
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1613387868139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613381031659" />
-    <state width="1515" height="184" key="GridCell.Tab.0.center" timestamp="1613381031649">
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1613387868139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613381031649" />
-    <state width="1515" height="184" key="GridCell.Tab.0.left" timestamp="1613381031649">
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1613387868139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613381031649" />
-    <state width="1515" height="184" key="GridCell.Tab.0.right" timestamp="1613381031659">
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1613387868139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613381031659" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1613301485448">
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1613387868139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1613301485448" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1613387868139">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1613387868139">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1613387868139">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1613387868139" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1613386413433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1613386413433" />
   </component>
 </project>

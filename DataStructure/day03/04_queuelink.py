@@ -7,7 +7,6 @@
 """
 
 class Node:
-    """节点类"""
     def __init__(self,value):
         self.value = value
         self.next = None
@@ -24,6 +23,7 @@ class Queue:
         node = Node(value)
         if self.is_empty():
             self.head = node
+            return
         cur = self.head
         while cur.next is not None:
             cur = cur.next
