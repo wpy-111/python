@@ -9,5 +9,5 @@ raw_samples = np.array([
     [23., 75., 5500]])
 r = sp.scale(raw_samples)
 print(r)
-print(np.mean(r,axis=0))
-print(np.std(r,axis=0))
+print(np.mean(r, axis=0))
+print(np.std(r, axis=0))
