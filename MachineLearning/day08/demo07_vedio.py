@@ -2,7 +2,7 @@
     视频捕获
 """
 import cv2 as cv
-vc = cv.VideoCapture(0)
+vc = cv.VideoCapture(1)
 while True:
     frame = vc.read()[1]
     cv.imshow('frame',frame)
