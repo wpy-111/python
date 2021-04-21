@@ -2,7 +2,7 @@
 #_*_coding:utf-8_*_
 # USAGE
 # python deep_learning_object_detection.py --image images/example_01.jpg \
-#	--prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
+#	--prototxt MobileNetSSD_deploy.prototxt.txt --__model__ MobileNetSSD_deploy.caffemodel
 
 # import the necessary packages
 import numpy as np
@@ -21,8 +21,8 @@ ap.add_argument("-i", "--image", required=False,#第一个参数
 	help="path to input image")#输入图像路劲
 ap.add_argument("-p", "--prototxt", required=False,default='MobileNetSSD_deploy.prototxt.txt',#第二个参数
 	help="path to Caffe 'deploy' prototxt file")#Caffe 'deploy' prototxt文件的路径
-ap.add_argument("-m", "--model", required=False,default="MobileNetSSD_deploy.caffemodel",#第三个参数
-	help="path to Caffe pre-trained model")#通往Caffe预训练模型的路径
+ap.add_argument("-m", "--__model__", required=False,default="MobileNetSSD_deploy.caffemodel",#第三个参数
+	help="path to Caffe pre-trained __model__")#通往Caffe预训练模型的路径
 ap.add_argument("-c", "--confidence", type=float, default=0.2,#第四个参数
 	help="minimum probability to filter weak detections")#最小概率过滤弱检测
 args = vars(ap.parse_args())#里面函数解析所有参数
@@ -36,11 +36,11 @@ CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
 COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 #功能：从一个均匀分布[low,high)中随机采样，注意定义域是左闭右开，即包含low，不包含high.
 # size: 输出样本数目，为int或元组(tuple)类型，例如，size=(m,n,k), 则输出m*n*k个样本，缺省时输出1个值。
-# load our serialized model from disk
-print("[INFO] loading model...")
-net1 = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
-net2 = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
-# cv2.dnn.readNetFromCaffe(prototxt, model)  用于进行SSD网络的caffe框架的加载
+# load our serialized __model__ from disk
+print("[INFO] loading __model__...")
+net1 = cv2.dnn.readNetFromCaffe(args["prototxt"], args["__model__"])
+net2 = cv2.dnn.readNetFromCaffe(args["prototxt"], args["__model__"])
+# cv2.dnn.readNetFromCaffe(prototxt, __model__)  用于进行SSD网络的caffe框架的加载
 # 参数说明:prototxt表示caffe网络的结构文本，model表示已经训练好的参数结果
 
 # load the input image and construct an input blob for the image（加载输入图像，并为该图像构建一个输入blob）

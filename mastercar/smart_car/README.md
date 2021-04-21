@@ -50,8 +50,8 @@ car_line -- 车道线模型
 + car = car_devices(video_w=320, video_h=240, buffer_size=20)
 
 # 调整模型输入张量的形状（必选）
-- ssd_lite = pm_model(data_shape=(1, 3, 128, 128), model_flie='./ssd_lite/model', param_file='./ssd_lite/params')
-+ ssd_lite = pm_model(data_shape=(1, 3, 320, 320), model_flie='./ssd_lite/model', param_file='./ssd_lite/params')
+- ssd_lite = pm_model(data_shape=(1, 3, 128, 128), model_flie='./ssd_lite/__model__', param_file='./ssd_lite/params')
++ ssd_lite = pm_model(data_shape=(1, 3, 320, 320), model_flie='./ssd_lite/__model__', param_file='./ssd_lite/params')
 
 # 调整预处理参数（必选）
 - img = preprocess_det(frame, (128, 128))
@@ -79,7 +79,7 @@ car = car_devices(video_w=160, video_h=120, buffer_size=20)
 # 检测模型只能使用pm_model来加载
 # 车道线模型可使用pm_model或者cxx_model加载
 # 但若使用cxx_model加载模型，请注意提前预热模型
-ssd_lite = pm_model(data_shape=(1, 3, 128, 128), model_flie='./ssd_lite/model', param_file='./ssd_lite/params')
+ssd_lite = pm_model(data_shape=(1, 3, 128, 128), model_flie='./ssd_lite/__model__', param_file='./ssd_lite/params')
 
 # 读取小车摄像头图像
 frame = car.read_frame()
