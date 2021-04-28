@@ -56,6 +56,7 @@ class Light:
         self.port_str = '{:02x}'.format(port)
 
     def lightcontrol(self, which, Red, Green, Blue):  # 0代表全亮，其他值对应灯珠亮，1~4
+        #“{:02d}”.format(i)表示将i变为两位十进制数字的字符串，不够两位用0填充。
         which_str = '{:02x}'.format(which)
         Red_str = '{:02x}'.format(Red)
         Green_str = '{:02x}'.format(Green)

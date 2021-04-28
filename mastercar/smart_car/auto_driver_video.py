@@ -24,7 +24,7 @@ if __name__ == "__main__":
     car_line = pm_model(data_shape=(1, 1, 128, 128), model_flie='./car_line/__model__', param_file='./car_line/params')
 
     # 加载标签列表
-    label_list = load_label_list('./ssd_lite/label_list.txt')
+    label_list = load_label_list('./ssd_lite/label_list.txt.txt')
 
     # 初始化视频写入器
     fourcc = cv2.VideoWriter_fourcc('M','J','P','G')

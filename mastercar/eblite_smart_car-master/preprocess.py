@@ -32,7 +32,7 @@ def preprocess_car_line(img, img_shape):
 	返回：预处理后的图像
 	'''
 	img = img[:,52:-52,:]
-	lower_hsv = np.array([20, 75, 165])
+	lower_hsv = np.array([20, 75, 190])
 	upper_hsv = np.array([40, 255, 255])
 	hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 	mask = cv2.inRange(hsv, lowerb=lower_hsv, upperb=upper_hsv)

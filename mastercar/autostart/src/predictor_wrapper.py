@@ -4,6 +4,8 @@ This module defines common interface for PaddlePaddle and PaddleLite.
 import os
 import numpy as np
 
+# from termcolor import colorize
+
 class Predictor:
     """ base class for Predictor interface"""
     def load(self, j):

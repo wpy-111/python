@@ -1,0 +1,6 @@
+background
+barracks
+fenglangjuxu
+fortress
+soldier
+target"

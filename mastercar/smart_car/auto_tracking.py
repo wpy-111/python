@@ -19,7 +19,7 @@ if __name__ == "__main__":
     ssd_lite = pm_model(data_shape=(1, 3, 128, 128), model_flie='./ssd_lite/__model__', param_file='./ssd_lite/params')
 
     # 加载标签列表
-    label_list = load_label_list('./ssd_lite/label_list.txt')
+    label_list = load_label_list('./ssd_lite/label_list.txt.txt')
 
     # 等待启动指令
     car.wait2start()

@@ -17,12 +17,13 @@ cruiser = Cruiser()
 start_button = Button(1, "UP")
 #程序关闭开关
 stop_button = Button(1, "DOWN")
-
+a = 0
 #确认"DOWN"按键是否按下，程序是否处于等待直行状态
 def check_stop():
     if stop_button.clicked():
         return True
     return False
+
 if __name__=='__main__':
     front_camera.start()
     #基准速度
@@ -38,7 +39,8 @@ if __name__=='__main__':
     #     print("Wait for start!")
     while True:
         front_image = front_camera.read()
-        driver.go(front_image)
+        driver.go(front_image,a)
+        a += 1
         if check_stop():
             driver.stop()
             print("End of program!")

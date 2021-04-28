@@ -22,7 +22,7 @@ if __name__ == "__main__":
     car_line = pm_model(data_shape=(1, 1, 128, 128), model_flie='./car_line/model', param_file='./car_line/params')
 
     # 加载标签列表
-    label_list = load_label_list('./ssd_lite/label_list.txt')
+    label_list = load_label_list('./ssd_lite/label_list.txt.txt')
     
     # 启动前预热
     for _ in range(30):
@@ -48,7 +48,7 @@ if __name__ == "__main__":
         
         # 预测结果后处理
         angle = get_angle(result_car_line)
-        results_list = draw_bbox(result_det, frame=None, label_list=label_list, draw_threshold=0.7, frame_shape=[120, 160])
+        results_list = draw_bbox(result_det, frame=None, label_list=label_list, draw_threshold=0.3, frame_shape=[120, 160])
 	
 	# 若仅测试检测模型时，请将angle设置为1500，保持直行
 	# angle = 1500

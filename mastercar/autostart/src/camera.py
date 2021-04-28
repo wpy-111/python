@@ -12,7 +12,7 @@ class Camera:
         self.stream.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
         # self.stream.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter::fourcc('M', 'J', 'P', 'G'));
         # self.stream.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('Y', 'U', 'Y', 'V'));
-        print("sss")
+        print("start video")
         self.stopped = False
         for _ in range(10): #warm up the camera
             (self.grabbed, self.frame) = self.stream.read()
@@ -28,10 +28,10 @@ class Camera:
                 return
             (self.grabbed, self.frame) = self.stream.read()
             time.sleep(1)
-            if self.src == 0:
-                path = "images/{}.png".format(count);
-                count = count + 1;
-                cv2.imwrite(path, self.frame);
+            # if self.src == 0:
+            #     path = "images/{}.png".format(count);
+            #     count = count + 1;
+            #     cv2.imwrite(path, self.frame);
 
 
     def read(self):

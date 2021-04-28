@@ -1,10 +1,12 @@
 import os
 import sys
+import cv2
 import time
 from cruiser import Cruiser
 from cart import Cart
-
-
+from detectors import SignDetector
+from model_validator import draw_boxes
+number = 0
 class Driver:
 
     def __init__(self):
@@ -13,13 +15,20 @@ class Driver:
         self.cart = Cart()
         self.cart.velocity=self.full_speed
         self.cruiser = Cruiser()
+        self.detection = SignDetector()
 
     def stop(self):
         self.cart.stop()
 
-    def go(self, frame):
-        angle = self.cruiser.cruise(frame)
-        self.cart.steer(angle)
+    def go(self, frame,a):
+        try:
+            angle = self.cruiser.cruise(frame)
+            self.cart.steer(angle)
+            results, blow_center_index = self.detection.detect(frame)
+            draw_boxes(frame, results,a)
+        except Exception as e:
+            print(e)
+
 
     def speed(self):
         return self.cart.velocity
