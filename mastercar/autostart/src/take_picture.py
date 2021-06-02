@@ -6,7 +6,7 @@ from widgets import Button
 from obstacle import Lightwork
 #摄像头编号
 # cam=0
-cam=1
+cam=0
 #程序开启运行开关
 start_button = Button(1, "UP")
 #程序关闭开关

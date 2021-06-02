@@ -1,4 +1,3 @@
-# from widgets import Servo, Servo_pwm,Motor_rotate, Magneto_sensor,UltrasonicSensor,Light,Buzzer
 from widgets import *
 import time
 import cart
@@ -19,6 +18,15 @@ def Lightwork(light_port,color):
     elif color=='off':
         light_color = off
     light.lightcontrol(0,light_color[0],light_color[1],light_color[2])
+
+def raiseflag():
+    pass
+
+def shot_target():
+    pass
+
+def capture_target():
+    pass
 
 if __name__ == '__main__':
     pass

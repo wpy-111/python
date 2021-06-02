@@ -25,7 +25,7 @@ class Cart:
         self.min_speed = 20
 
     def steer(self, angle):
-        print(angle)
+        # print(angle)
         speed = int(self.velocity);
         if abs(angle) > 0.12:
             speed = int(self.velocity * self.slow_ratio);
@@ -34,8 +34,10 @@ class Cart:
         delta = angle - 0
         
 
-        leftwheel = speed+1
-        rightwheel = speed-2
+        # leftwheel = speed+1
+        # rightwheel = speed-2
+        leftwheel = speed
+        rightwheel = speed
         
         scale = 1;
         if (delta < 0):
@@ -60,16 +62,19 @@ class Cart:
         return speed
 
     def move(self, speeds):
-        left_front = -int(speeds[0]);
-        right_front = int(speeds[1]);
-        left_rear = -int(speeds[2]);
-        right_rear = int(speeds[3]);
+        left_front = int(speeds[0]);
+        right_front = -int(speeds[1]);
+        left_rear = int(speeds[2]);
+        right_rear = -int(speeds[3]);
         self.min_speed = int(min(speeds))
         # print(speeds)
         left_front=self.exchange(left_front)
         right_front = self.exchange(right_front)
         left_rear=self.exchange(left_rear)
         right_rear = self.exchange(right_rear)
+        #comma_head_01_motor = bytes.fromhex('77 68 06 00 02 0C 01 01')
+        # left_front = -int(speeds[0]);
+        # comma_trail = bytes.fromhex('0A')
         send_data_01_motor = comma_head_01_motor + left_front.to_bytes(1, byteorder='big', signed=True) + comma_trail
         send_data_02_motor = comma_head_02_motor + right_front.to_bytes(1, byteorder='big', signed=True) + comma_trail
         send_data_03_motor = comma_head_03_motor + left_rear.to_bytes(1, byteorder='big', signed=True) + comma_trail

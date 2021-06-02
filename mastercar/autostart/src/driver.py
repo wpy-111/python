@@ -1,17 +1,16 @@
 import os
 import sys
-import cv2
 import time
 from cruiser import Cruiser
 from cart import Cart
 from detectors import SignDetector
 from model_validator import draw_boxes
+from model_validator import draw_line
 number = 0
 class Driver:
-
     def __init__(self):
-        self.max_speed=25
-        self.full_speed = 25
+        self.max_speed=40
+        self.full_speed = 40
         self.cart = Cart()
         self.cart.velocity=self.full_speed
         self.cruiser = Cruiser()
@@ -20,15 +19,16 @@ class Driver:
     def stop(self):
         self.cart.stop()
 
-    def go(self, frame,a):
-        try:
-            angle = self.cruiser.cruise(frame)
-            self.cart.steer(angle)
-            results, blow_center_index = self.detection.detect(frame)
-            draw_boxes(frame, results,a)
-        except Exception as e:
-            print(e)
+    def go_video(self, frame,a):
+        img = self.car_line(frame,a)
+        img = self.image_detection(img,a,frame)
+        return img
 
+    def go(self,frame):
+        angle = self.cruiser.cruise(frame)
+        results = self.detection.detect(frame)
+        self.cart.steer(angle)
+        return results
 
     def speed(self):
         return self.cart.velocity
@@ -54,6 +54,17 @@ class Driver:
         self.cart.move([l_speed, r_speed, l_speed, r_speed])
         time.sleep(1)
         self.cart.stop()
+
+    def car_line(self,frame,a):
+        angle = self.cruiser.cruise(frame)
+        img = draw_line(frame,angle,a)
+        self.cart.steer(angle)
+        return img
+
+    def image_detection(self,frame,a,img):
+        results = self.detection.detect(img)
+        frame = draw_boxes(frame,results,a)
+        return frame
 
     def change_posture_cm(self, distance):
         basespeed = 15

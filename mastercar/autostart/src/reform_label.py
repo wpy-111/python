@@ -1,7 +1,7 @@
 import json
 
-FILE1 = 'train/result.json'
-NEW = 'd1.txt'
+FILE1 = 'C:/Users/asus/Desktop/result4.json'
+NEW = 'd4.txt'
 IMG_DIR = 'd1/'
 
 with open(NEW, 'w') as new:

@@ -11,7 +11,7 @@ import datetime
 import predictor_wrapper
 
 engine = "PaddleLite"
-THRESHOLD = 0.5
+THRESHOLD = 0.6
 
 cnn_args = {
     "shape": [1, 3, 128, 128]
@@ -20,36 +20,34 @@ cnn_args = {
 yolo_args = {
     "shape": [1, 3, 300, 300]
 }
-
+def draw_line(img,angle,a):
+    img = cv2.putText(img,str(angle), (50, 150), cv2.FONT_HERSHEY_COMPLEX, 2, (0, 255, 0), 2)
+    # filename = './line_images/' + str(a) + '.jpg'
+    # cv2.imwrite(filename, img)
+    return img
 def draw_boxes(img, valid_results,a):
     """ draw SSD boxes on image"""
+    if valid_results is None:
+        return img
     res = list(img.shape)
-    # for item in valid_results:
-    #     if item[2] > 1 or item[3] > 1 or item[4] > 1 or item[5] > 1:
-    #         # YOLO network don't need to multiply original dimenstion;
-    #         res[0] = 1
-    #         res[1] = 1
-    #         break
-    # for _, item in enumerate(valid_results):
     for item in valid_results:
         if item[1] < THRESHOLD:
             continue;
-        print('score:',item[1])
-        print('name:',item[0])
-        left = item[2] * res[1]
-        top = item[3] * res[0]
-        right = item[4] * res[1]
-        bottom = item[5] * res[0]
+        print("name:",item[0],"   ","score:",item[1])
+        bbox = item[2]
+        left = bbox[0] * res[1]
+        top = bbox[1] * res[0]
+        right = bbox[2] * res[1]
+        bottom = bbox[3] * res[0]
         start_point = (int(left), int(top))
         end_point = (int(right), int(bottom))
         color = (204, 0, 204)
         thickness = 2
-        x = int((left+right)/2)
-        y = int((top + bottom) / 2)
         img = cv2.rectangle(img, start_point, end_point, color, thickness)
-        img = cv2.putText(img,item[0], (x,y), cv2.FONT_HERSHEY_COMPLEX, 2, (0, 255, 0), 2)
-    filename = './images/'+str(a)+'.jpg'
-    cv2.imwrite(filename, img)
+        img = cv2.putText(img,item[0], (400, 400), cv2.FONT_HERSHEY_COMPLEX, 2, (0, 255, 0), 2)
+    # filename = './images/'+str(a)+'.jpg'
+    # cv2.imwrite(filename, img)
+    return img
 
 
 def dataset(frame, size):

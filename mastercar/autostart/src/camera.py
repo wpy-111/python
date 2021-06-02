@@ -27,7 +27,7 @@ class Camera:
             if self.stopped:
                 return
             (self.grabbed, self.frame) = self.stream.read()
-            time.sleep(1)
+            #time.sleep(0.1)
             # if self.src == 0:
             #     path = "images/{}.png".format(count);
             #     count = count + 1;

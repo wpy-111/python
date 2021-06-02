@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import predictor_wrapper
 import config
-from PIL import Image
 cnn_args = {
     "shape": [1, 3, 128, 128],
     "ms": [125.5, 0.00392157]
@@ -32,7 +31,6 @@ def cnn_preprocess(args, img, buf):
     hwc_shape[3], hwc_shape[1] = hwc_shape[1], hwc_shape[3]
     data = buf
     img = img.reshape(hwc_shape)
-    # print("hwc_shape:{}".format(hwc_shape))
     data[0:, 0:hwc_shape[1], 0:hwc_shape[2], 0:hwc_shape[3]] = img
     data = data.reshape(shape)
     return data
@@ -53,9 +51,8 @@ class Cruiser:
         self.predictor = predictor_wrapper.PaddleLitePredictor()
         self.predictor.load(cruise_model)
 
-    def cruise(self, frame):
+    def cruise(self,frame):
         res = infer_cnn(self.predictor,self.buf, frame);
-        # print(res)
         return res;
 
 if __name__ == "__main__":

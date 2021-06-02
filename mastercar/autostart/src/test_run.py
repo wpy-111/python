@@ -11,7 +11,7 @@ enable_detection = False
 #前置摄像头
 front_camera = Camera(config.front_cam, [640, 480])
 #侧边摄像头
-side_camera = Camera(config.side_cam, [640, 480])
+# side_camera = Camera(config.side_cam, [640, 480])
 driver = Driver()
 #程序开启运行开关
 start_button = Button(1, "UP")
@@ -61,7 +61,7 @@ state_map = {
 
 def main():
     front_camera.start()
-    side_camera.start()
+    # side_camera.start()
     time.sleep(0.2)
     Lightwork(2, "red")
     Lightwork(4, "red")
@@ -80,7 +80,7 @@ def main():
 
     driver.stop()
     front_camera.stop()
-    side_camera.stop()
+    # side_camera.stop()
 
 if __name__=='__main__':
     main()

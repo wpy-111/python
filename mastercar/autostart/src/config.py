@@ -37,7 +37,7 @@ cruise = {
 # sign models
 sign = {
 	"model": model_prefix + "models/sign",
-	"threshold": 0.3,
+	"threshold": 0.6,
 	"label_list": sign_list,
 	# label = 0 is background
 	"class_num": 10

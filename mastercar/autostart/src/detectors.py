@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import sys
 import cv2
 import numpy as np
 import predictor_wrapper
@@ -6,6 +7,7 @@ import config
 # from classifier import Classifier
 from camera import Camera
 import time
+
 ssd_args = {
     "shape": [1, 3, 300, 300],
     "ms": [127.5, 0.007843]
@@ -79,7 +81,6 @@ class DetectionResult:
         self.name = ""
         self.relative_box = [0, 0, 0, 0]
         self.relative_center_y = -1
-        self.relative_center_x = -1
 
     def __repr__(self):
         return "name:{} scroe:{}".format(self.name, self.score);
@@ -114,7 +115,6 @@ def res_to_detection(item, label_list, frame):
     detection_object.name = label_list[item[0]]
     detection_object.relative_box = item[2:6]
     detection_object.relative_center_y = (item[1] + item[3]) / 2
-
     # print("res_to_detection:{}  {}".format(detection_object.name, detection_object.score))
     return detection_object
 
@@ -127,46 +127,36 @@ class SignDetector:
         self.class_num = config.sign["class_num"]
 
     def detect(self, frame, status='cruise'):
-        try:
-            res = infer_ssd(self.predictor, frame)
-            res = np.array(res)
-            labels = res[:, 0]
-            scores = res[:, 1]
-            # only one box for one class
-            maxscore_index_per_class = [-1 for i in range(self.class_num)]
-            maxscore_per_class = [-1 for i in range(self.class_num)]
-            count = 0
-            for label, score in zip(labels, scores):
-                if score > maxscore_per_class[int(label)]:
-                    maxscore_per_class[int(label)] = score
-                    maxscore_index_per_class[int(label)] = count
-                count += 1
+        res = infer_ssd(self.predictor, frame)
+        res = np.array(res)
+        if res[0][0] == -1:
+            return
+        labels = res[:, 0]
+        scores = res[:, 1]
+        # only one box for one class
+        maxscore_index_per_class = [-1 for i in range(self.class_num)]
+        maxscore_per_class = [-1 for i in range(self.class_num)]
+        count = 0
+        for label, score in zip(labels, scores):
+            if score > maxscore_per_class[int(label)]:
+                maxscore_per_class[int(label)] = score
+                maxscore_index_per_class[int(label)] = count
+            count += 1
 
-            maxscore_index_per_class = [i for i in maxscore_index_per_class if i != -1]
-            res = res[maxscore_index_per_class, :]
-            blow_center = 0
-            blow_center_index = -1
-            index = 0
-            results = []
-            for item in res:
-                if is_sign_valid(item):
-                    detect_res = res_to_detection(item, self.label_list, frame)
-                    label = detect_res.name
-                    score = item[1]
-                    xmin = item[2]
-                    ymin = item[3]
-                    xmax = item[4]
-                    ymax = item[5]
-                    object = [label,score,xmin,ymin,xmax,ymax]
-                    # print(detect_res)
-                    results.append(object)
-                    if detect_res.relative_center_y > blow_center:
-                        blow_center_index = index
-                        blow_center = detect_res.relative_center_y
-                    index += 1
-            return results, blow_center_index
-        except:
-            print('error')
+        maxscore_index_per_class = [i for i in maxscore_index_per_class if i != -1]
+        res = res[maxscore_index_per_class, :]
+        # print(res)
+        results = []
+        for item in res:
+            if is_sign_valid(item):
+                # detect_res = res_to_detection(item, self.label_list, frame)
+                name = self.label_list[item[0]]
+                score = item[1]
+                bbox = item[2:6]
+                items = [name,score,bbox]
+                results.append(items)
+        return results
+
 
 class TaskDetector:
     def __init__(self):
