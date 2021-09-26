@@ -5,16 +5,15 @@ import datetime
 import time
 import cv2
 import os
-# from .config import *
 import config
 from widgets import *
 from camera import Camera
 from driver import Driver, SLOW_DOWN_RATE
 from detectors import SignDetector
 from detectors import TaskDetector
-from detectors import in_centered_in_image,is_target,is_trophies,is_soldier
+from detectors import in_centered_in_image,is_target,is_trophies,is_soldier,is_target1
 from fixed_queue import FixedQueue
-from obstacle import raiseflag, shot_target, capture_target, Lightwork,banyun,raise_finally
+from obstacle import raiseflag, shot_target, capture_target, Lightwork,banyun,shot_target1
 # 是否进行标志和目标物检测
 camera_pwm = Servo(2)
 enable_detection = True
@@ -78,7 +77,7 @@ def select_queue(detect_res, blow_index, status):
     for item in detect_res:
         label = item.index
         # 距离较远的框不插入？
-        y_bar = 0.5
+        y_bar = 0.1
         if item.index == 2:  # 封狼居胥
             y_bar = 0.6
         elif item.index == 1:#宿营
@@ -86,9 +85,9 @@ def select_queue(detect_res, blow_index, status):
         elif item.index == 7:  # obstacle;
             y_bar = 0.7
         elif item.index == 5:#打标
-            y_bar = 0.5
+            y_bar = 0.45
         elif item.index == 4:#soldier
-            y_bar = 0.3
+            y_bar = 0.1
         if item.relative_box[3] > y_bar:
             if count == blow_index and status == 'cruise':
                 task_queue_.append(1, label)
@@ -147,19 +146,19 @@ def cruise_handler(arg):
     if taskorder == 2 or taskorder == 4:
         driver.set_speed(30)
     elif taskorder == 0:
-        driver.set_Kx(40)
-    elif taskorder == 3:
         driver.set_speed(50)
-    elif taskorder == 8:
+    elif taskorder == 7 or taskorder == 1 or taskorder == 3:
         driver.set_speed(60)
+    elif taskorder == 8:
+        driver.set_speed(70)
     else:
         driver.set_speed(driver.full_speed)
     if taskorder == 5:
         driver.set_Kx(1.3)
-    elif taskorder == 1 or taskorder == 8 or taskorder == 3:
+    elif taskorder == 8 or taskorder == 3:
         driver.set_Kx(0.95)
-    elif taskorder == 6:
-        driver.set_Kx(0.75)
+    elif taskorder == 1:
+        driver.set_Kx(0.95)
     else:
         driver.set_Kx(0.85)
     while True:
@@ -269,9 +268,9 @@ def sign_detected_handler(arg):
             side_image = side_camera.read()
             res = task_detector.detect(side_image)
 
-        elif frontimagenum > 1:
+        elif frontimagenum >= 1:
             if arg == "fenglangjuxu":
-                driver.set_speed(cur_speed * 0.5)
+                driver.set_speed(cur_speed * 0.6)
             else:
                 driver.set_speed(cur_speed * SLOW_DOWN_RATE)
             side_image = side_camera.read()
@@ -284,7 +283,38 @@ def sign_detected_handler(arg):
             print(res)
             miss_mission = 0
             if res[0].name == "target":
-                if taskorder == 1 or taskorder == 2 or taskorder == 3:
+                if taskorder == 1:
+                    num_target = is_target(res)
+                    if num_target == 1:
+                        print("stepping into target")
+                        task_queue().clear()
+                        driver.stop()
+                        time.sleep(0.1)
+                        frontimagenum = 0
+                        print("+++++++++++++++++++start task!res=", res)
+                        return STATE_TASK, res
+                    elif num_target == -1:
+                        driver.driver_run(-8,-8)
+                        time.sleep(0.8)
+                    else:
+                        driver.set_speed(8)
+                elif taskorder == 3:
+                    num_target = is_target1(res)
+                    if num_target == 1:
+                        print("stepping into target")
+                        task_queue().clear()
+                        driver.stop()
+                        time.sleep(0.1)
+                        frontimagenum = 0
+                        print("+++++++++++++++++++start task!res=", res)
+                        return STATE_TASK, res
+                    elif num_target == -1:
+                        driver.driver_run(-8, -8)
+                        time.sleep(0.8)
+
+                    else:
+                        driver.set_speed(8)
+                elif taskorder == 2:
                     num_target = is_target(res)
                     if num_target == 1:
                         print("stepping into target")
@@ -297,7 +327,7 @@ def sign_detected_handler(arg):
                     elif num_target == -1:
                         # driver.set_speed(-8)
                         driver.driver_run(-8,-8)
-                        time.sleep(0.8)
+                        time.sleep(0.6)
                     else:
                         driver.set_speed(8)
 
@@ -364,22 +394,22 @@ def task_handler(res):
     cur_speed = driver.full_speed
     driver.set_speed(cur_speed)
     if res == "barracks":
-        driver.driver_run(40, 40)
+        driver.driver_run(30, 30)
         time.sleep(0.6)
-        driver.driver_run(0, -50)
-        time.sleep(0.85)
-        driver.driver_run(-40, -40)
-        time.sleep(0.6)
+        driver.driver_run(0, -40)
+        time.sleep(1)
+        driver.driver_run(-30, -30)
+        time.sleep(0.7)
         driver.stop()
         for i in range(0, 3):
             Lightwork(2, "red")
             time.sleep(0.2)
             Lightwork(2, "off")
             time.sleep(0.1)
-        driver.driver_run(40, 40)
-        time.sleep(0.35)
-        driver.driver_run(0, 50)
-        time.sleep(0.35)
+        driver.driver_run(30, 30)
+        time.sleep(0.62)
+        driver.driver_run(0, 40)
+        time.sleep(0.82)
         taskorder = 5
     elif res == 'dingxiangjun':
         driver.stop()
@@ -397,66 +427,60 @@ def task_handler(res):
         elif name == "daijun":
             if taskorder == 0:
                 driver.driver_run(-30, -30)
-                time.sleep(0.3)
+                time.sleep(0.2)
                 driver.stop()
                 taskorder = 1
                 raiseflag(4, 3)
             elif taskorder == 1:
-                driver.driver_run(30, 30)
-                time.sleep(0.3)
                 driver.stop()
                 taskorder = 1
                 raiseflag(4, 3)
             else:
-                driver.driver_run(-30, -30)
-                time.sleep(0.3)
                 driver.stop()
                 taskorder = 8
                 raiseflag(4, 3)
         elif name == "dingxiangjun":
             if taskorder == 0:
                 driver.driver_run(-30, -30)
-                time.sleep(0.3)
+                time.sleep(0.2)
                 driver.stop()
                 taskorder = 1
                 raiseflag(4, 3)
             elif taskorder == 1:
-                driver.driver_run(30, 30)
-                time.sleep(0.3)
                 driver.stop()
                 taskorder = 1
                 raiseflag(4, 3)
             else:
-                driver.driver_run(-30, -30)
-                time.sleep(0.3)
+
                 driver.stop()
                 taskorder = 8
                 raiseflag(4, 3)
         elif name == "dunhuang":
             if taskorder == 0:
                 driver.driver_run(-30, -30)
-                time.sleep(0.3)
+                time.sleep(0.2)
                 driver.stop()
                 taskorder = 1
                 raiseflag(4, 3)
             elif taskorder == 1:
-                driver.driver_run(30, 30)
-                time.sleep(0.3)
+
                 driver.stop()
                 taskorder = 1
                 raiseflag(4, 3)
             else:
-                driver.driver_run(-30, -30)
-                time.sleep(0.3)
+
                 driver.stop()
                 taskorder = 8
                 raiseflag(4, 3)
         elif name == "target":
-
             driver.stop()
             time.sleep(0.1)
-            shot_target(2)
-            taskorder += 1
+            if taskorder == 3:
+                shot_target1(2)
+                taskorder += 1
+            else:
+                shot_target(2)
+                taskorder += 1
 
         elif name == "trophies":
             driver.stop()
@@ -481,7 +505,7 @@ def task_handler(res):
 def go_task_8(arg):
     global taskorder
     print("go_task_8")
-    driver.set_speed(50)
+    driver.set_speed(55)
     while True:
         front_image = front_camera.read()
         driver.go(front_image)

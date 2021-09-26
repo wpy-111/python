@@ -1,0 +1,12 @@
+from widgets import *
+print("banyun start!")
+setmotor1 = Motor_rotate(3)
+time.sleep(0.1)
+setmotor1.motor_rotate(12)
+time.sleep(0.4)
+setmotor1.motor_rotate(0)
+time.sleep(0.5)
+setmotor1.motor_rotate(-12)
+time.sleep(0.8)
+setmotor1.motor_rotate(0)
+print("banyun stop!")

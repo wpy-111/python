@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
-import sys
 import cv2
 import numpy as np
 import predictor_wrapper
 import config
 # from classifier import Classifier
 from camera import Camera
+from driver import Driver
 import time
-
 ssd_args = {
     "shape": [1, 3, 300, 300],
     "ms": [127.5, 0.007843]
@@ -19,6 +18,27 @@ def name_to_index(name, label_list):
     return None
 
 
+def draw_res(frame, results):
+    res = list(frame.shape)
+    print(results)
+    for item in results:
+        print(item)
+        print(type(item))
+        left = item.relative_box[0] * res[1]
+        top = item.relative_box[1] * res[0]
+        right = item.relative_box[2] * res[1]
+        bottom = item.relative_box[3] * res[0]
+        start_point = (int(left), int(top))
+        end_point = (int(right), int(bottom))
+        color = (0, 244, 10)
+        thickness = 2
+        frame = cv2.rectangle(frame, start_point, end_point, color, thickness)
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        org = start_point[0], start_point[1] - 10
+        fontScale = 1
+        frame = cv2.putText(frame, item.name, org, font,
+                           fontScale, color, thickness, cv2.LINE_AA)
+        return frame
 def light_index_to_global(light_index):
     return light_index
 
@@ -102,12 +122,59 @@ def in_centered_in_image(res):
         relative_box = clip_box(relative_box)
         relative_center_x = (relative_box[0] + relative_box[2]) / 2
         print(">>>>>>>>>>>>>>>>>>>>>relative_center_x=",relative_center_x)
-        if relative_center_x < config.mission_high and relative_center_x > config.mission_low:
+        if relative_center_x == 0.5:
+            return False
+        elif relative_center_x < config.mission_high and relative_center_x > config.mission_low:
             return True
     return False
+def is_target(res):
+    for item in res:
+        relative_box = item.relative_box
+        relative_box = clip_box(relative_box)
+        relative_center_x = (relative_box[0] + relative_box[2]) / 2
+        print(">>>>>>>>>>>>>>>>>>>>>relative_center_x=",relative_center_x)
+        if relative_center_x < 0.242:
+            return int(2)
+        elif relative_center_x >0.248:
+            return int(-1)
+        return int(1)
+def is_target1(res):
+    for item in res:
+        relative_box = item.relative_box
+        relative_box = clip_box(relative_box)
+        relative_center_x = (relative_box[0] + relative_box[2]) / 2
+        print(">>>>>>>>>>>>>>>>>>>>>relative_center_x=",relative_center_x)
+        if relative_center_x < 0.2335:
+            return int(2)
+        elif relative_center_x >0.238:
+            return int(-1)
+        return int(1)
 
+def is_trophies(res):
+    for item in res:
+        relative_box = item.relative_box
+        relative_box = clip_box(relative_box)
+        relative_center_x = (relative_box[0] + relative_box[2]) / 2
+        print(">>>>>>>>>>>>>>>>>>>>>relative_center_x=",relative_center_x)
+        if relative_center_x < 0.730:
+            return int(-1)
+        elif relative_center_x >0.746:
+            return int(2)
+        return int(1)
 
-# should be a class method?
+def is_soldier(res):
+    for item in res:
+        relative_box = item.relative_box
+        relative_box = clip_box(relative_box)
+        relative_center_x = (relative_box[0] + relative_box[2]) / 2
+        print(">>>>>>>>>>>>>>>>>>>>>relative_center_x=",relative_center_x)
+        if relative_center_x < 0.205:
+            return int(2)
+        elif relative_center_x >0.220:
+            return int(-1)
+        return int(1)
+
+        # should be a class method?
 def res_to_detection(item, label_list, frame):
     detection_object = DetectionResult()
     detection_object.index = item[0]
@@ -118,7 +185,6 @@ def res_to_detection(item, label_list, frame):
     # print("res_to_detection:{}  {}".format(detection_object.name, detection_object.score))
     return detection_object
 
-
 class SignDetector:
     def __init__(self):
         self.predictor = predictor_wrapper.PaddleLitePredictor()
@@ -127,12 +193,16 @@ class SignDetector:
         self.class_num = config.sign["class_num"]
 
     def detect(self, frame, status='cruise'):
+      
         res = infer_ssd(self.predictor, frame)
+        # print("res=",res)
         res = np.array(res)
-        if res[0][0] == -1:
-            return
+        if(len(res)==1):
+            res=[[0,0,0,0,0,0]]
+            res=np.array(res)
         labels = res[:, 0]
         scores = res[:, 1]
+        
         # only one box for one class
         maxscore_index_per_class = [-1 for i in range(self.class_num)]
         maxscore_per_class = [-1 for i in range(self.class_num)]
@@ -146,16 +216,20 @@ class SignDetector:
         maxscore_index_per_class = [i for i in maxscore_index_per_class if i != -1]
         res = res[maxscore_index_per_class, :]
         # print(res)
+        blow_center = 0
+        blow_center_index = -1
+        index = 0
         results = []
         for item in res:
             if is_sign_valid(item):
-                # detect_res = res_to_detection(item, self.label_list, frame)
-                name = self.label_list[item[0]]
-                score = item[1]
-                bbox = item[2:6]
-                items = [name,score,bbox]
-                results.append(items)
-        return results
+                detect_res = res_to_detection(item, self.label_list, frame)
+                # print(detect_res)
+                results.append(detect_res)
+                if detect_res.relative_center_y > blow_center:
+                    blow_center_index = index
+                    blow_center = detect_res.relative_center_y
+                index += 1
+        return results, blow_center_index
 
 
 class TaskDetector:
@@ -166,30 +240,34 @@ class TaskDetector:
 
     # only one gt for one label
     def detect(self, frame):
-        nmsed_out = infer_ssd(self.predictor, frame)
-        # print("nmsed_out=",nmsed_out)
-        max_indexes = [-1 for i in range(config.MISSION_NUM)]
-        max_scores = [-1 for i in range(config.MISSION_NUM)]
-        # print("max_scores=",max_scores)
-        predict_label = nmsed_out[:, 0].tolist()
-        predict_score = nmsed_out[:, 1].tolist()
-        count = 0
-        for label, score in zip(predict_label, predict_score):
-            if score > max_scores[int(label)] and score > config.task["threshold"]:
-                max_indexes[int(label)] = count
-                max_scores[int(label)] = score
-            count += 1
-
-        selected_indexes = [i for i in max_indexes if i != -1]
-        task_index = [i for i in selected_indexes if
-                      config.mission_label_list[predict_label[i]] != "redball" or config.mission_label_list[
-                          predict_label[i]] != "blueball"]
-        res = nmsed_out[task_index, :]
         results = []
-        for item in res:
-            if is_task_valid(item):
-                results.append(res_to_detection(item, self.label_list, frame))
-        return results
+        try:
+            nmsed_out = infer_ssd(self.predictor, frame)
+            # print("nmsed_out=",nmsed_out)
+
+            max_indexes = [-1 for i in range(config.MISSION_NUM)]
+            max_scores = [-1 for i in range(config.MISSION_NUM)]
+            # print("max_scores=",max_scores)
+            predict_label = nmsed_out[:, 0].tolist()
+            predict_score = nmsed_out[:, 1].tolist()
+            count = 0
+            for label, score in zip(predict_label, predict_score):
+                if score > max_scores[int(label)] and score > config.task["threshold"]:
+                    max_indexes[int(label)] = count
+                    max_scores[int(label)] = score
+                count += 1
+
+            selected_indexes = [i for i in max_indexes if i != -1]
+            task_index = [i for i in selected_indexes if
+                          config.mission_label_list[predict_label[i]] != "redball" or config.mission_label_list[
+                              predict_label[i]] != "blueball"]
+            res = nmsed_out[task_index, :]
+            for item in res:
+                if is_task_valid(item):
+                    results.append(res_to_detection(item, self.label_list, frame))
+            return results
+        except Exception as e:
+            return results
 
 def test_task_detector():
     td = TaskDetector()
@@ -222,38 +300,3 @@ def test_front_detector():
             print("signs=",signs[0].name,"signs_scroe=",signs[0].score)
     print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
 
-if __name__ == "__main__":
-    # test_task_detector()
-    # test_sign_detector()
-    # test_front_detector()
-    task_detector = TaskDetector()
-    sign_detector=SignDetector()
-    front_camera = Camera(config.front_cam, [640, 480])
-    side_camera = Camera(config.side_cam, [640, 480])
-    num=0
-    imgnum=0
-    from driver import Driver
-    driver=Driver()
-    driver.set_speed(driver.full_speed * 0.6)
-    front_camera.start()
-    side_camera.start()
-    while True:
-        num+=1
-        # side_camera.update()
-        front_image = front_camera.read()
-        driver.go(front_image)
-        side_image = side_camera.read()
-        #视觉数据采集
-        # imgnum+=1
-        # print("image%d"%imgnum)
-        # cv2.imwrite('./image/{}.png'.format(imgnum), side_image)
-        # time.sleep(0.01)
-        # res = task_detector.detect(side_image)
-        # print("*****************sidecam=", res,"num=",num)
-        # res = task_detector.detect(side_image)
-        # print("*****************sidecam=", res,"num=",num)
-        res,index = sign_detector.detect(front_image)
-        print("*****************sidecam=", res,"num=",num)
-        # time.sleep(0.05)
-    front_camera.stop()
-    side_camera.stop()

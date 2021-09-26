@@ -67,6 +67,8 @@ class UltrasonicSensor():
         self.cmd_data = bytes.fromhex('77 68 04 00 01 D1 {} 0A'.format(port_str))
 
     def read(self):
+        serial.serial.flushInput()
+        serial.serial.flushOutput()
         serial.write(self.cmd_data)
         # time.sleep(0.01)
         return_data = serial.read()
@@ -180,6 +182,8 @@ class Magneto_sensor:
         self.cmd_data = bytes.fromhex('77 68 04 00 01 CF {} 0A'.format(port_str))
 
     def read(self):
+        serial.serial.flushInput()
+        serial.serial.flushOutput()
         serial.write(self.cmd_data)
         return_data = serial.read()
         # print("return_data=",return_data[8])

@@ -29,21 +29,11 @@ def check_stop():
 def start():
     while True:
         front_image = front_camera.read()
-        angle = cruiser.cruise(front_image)
         driver.go(front_image)
-        results, blow_center_index = sign_detector.detect(front_image)
-        print("res:",results,'blow_center_index:',blow_center_index)
-        if blow_center_index == -1:
-            frame = cv2.putText(front_image,str(angle), (40, 50), font, 2, color, 2)
-        else:
-            frame = cv2.putText(front_image, str(angle), (50, 50), font, 2, color, 2)
-            frame = draw_res(frame,results)
-        videoWriter.write(frame)
 def end():
     while True:
         if check_stop():
             driver.stop()
-            videoWriter.release()
             front_camera.stop()
             os.system('sudo pkill python')
 
@@ -54,13 +44,6 @@ if __name__=='__main__':
     #转弯系数
     driver.cart.Kx=0.9
     #延时
-    time.sleep(0.5)
-    sign_detector = SignDetector()
-    color = (0,255,0)
-    font = cv2.FONT_HERSHEY_SIMPLEX
-
-    fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
-    videoWriter = cv2.VideoWriter('./video/video.avi', fourcc, 15, (640, 480))
     while True:
         if start_button.clicked():
             time.sleep(0.3)

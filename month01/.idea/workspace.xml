@@ -1,8 +1,382 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d348d514-5a9e-408e-8c3d-1ba902fab77b" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="d348d514-5a9e-408e-8c3d-1ba902fab77b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../mastercar/Test/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mastercar/autostart/src/control.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mastercar/autostart/src/shengqi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/Test/101.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/Test/101.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/Test/1111.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/Test/1111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/Label/barracks/0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/Label/barracks/10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/auto_car_video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/barracks/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/camera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/collect.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/collect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/cruiser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/cruiser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/d.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/detectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/detectors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/finally.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/banyun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/label2xml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/label_json_totxt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/model_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/model_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/models/cruise/model" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/models/cruise/model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/models/cruise/params" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/models/cruise/params" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/models/sign/model" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/models/sign/model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/models/sign/params" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/models/sign/params" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/models/task/model" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/models/task/model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/models/task/params" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/models/task/params" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/obstacle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/obstacle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/paddlelite.cpython-35m-aarch64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/paddlelite.cpython-35m-aarch64-linux-gnu.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/reform_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/reform_label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/serial_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/serial_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/take_picture.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/take_picture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/cruise/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/cruise/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/cruise/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/cruise_res/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/cruise_res/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/cruise_res/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front_res/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front_res/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front_res/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front_res/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front_res/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/front_res/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/sign/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/sign/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/sign/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/sign/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/sign/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/sign/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task/165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task/168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task_res/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task_res/165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task_res/168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task_res/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task_res/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task_res/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test/task_res/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test_four.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test_one.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/test_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/test_three.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mastercar/autostart/src/xunhang.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mastercar/autostart/src/xunhang.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/month01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/month01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/.idea/官方.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/.idea/autostart.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/build_lib_35.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/camera.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/cart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/collect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/control_next.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/cruiser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/detectors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/driver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/export.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/fixed_queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/joystick.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/model_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/models/cruise/model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/models/cruise/params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/new_collect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/obstacle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite.cpython-35m-aarch64-linux-gnu.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._include" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._pybind11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/._src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/._paddle_api.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/._paddle_image_preprocess.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/._paddle_lite_factory_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/._paddle_place.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/paddle_api.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/paddle_image_preprocess.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/paddle_lite_factory_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/include/paddle_place.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/lib/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._include" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._pybind11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/._tools" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/._pybind11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._attr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._buffer_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._cast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._chrono.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._complex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._detail" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._eigen.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._embed.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._eval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._functional.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._iostream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._numpy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._operators.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._options.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._pybind11.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._pytypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._stl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/._stl_bind.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/attr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/buffer_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/cast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/chrono.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/complex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/._class.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/._common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/._descr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/._init.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/._internals.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/._typeid.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/class.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/descr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/init.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/internals.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/detail/typeid.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/eigen.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/embed.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/eval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/functional.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/iostream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/numpy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/operators.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/options.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/pybind11.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/pytypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/stl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/include/pybind11/stl_bind.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/pybind11/.___init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/pybind11/.___main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/pybind11/.__version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/pybind11/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/pybind11/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/pybind11/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._FindCatch.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._FindEigen3.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._FindPythonLibsNew.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._check-style.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._libsize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._mkdoc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._pybind11Config.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/._pybind11Tools.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/FindCatch.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/FindEigen3.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/FindPythonLibsNew.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/check-style.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/libsize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/mkdoc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/pybind11Config.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/pybind11/tools/pybind11Tools.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/src/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/src/._pybind.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/src/._pybind.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/src/pybind.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/paddlelite/src/pybind.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/per.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/predictor_wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/reform_label.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/serial_port.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/take_picture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/cruise/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/cruise/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/cruise/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/cruise_res/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/cruise_res/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/cruise_res/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front_res/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front_res/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front_res/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front_res/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front_res/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/front_res/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/sign/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/sign/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/sign/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/sign/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/sign/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/sign/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task/165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task/168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task_res/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task_res/165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task_res/168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task_res/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task_res/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task_res/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test/task_res/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test_barracks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test_flag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test_pwm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/test_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/widgets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../官方/autostart/src/widgets_servo_test_delay.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +389,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1eQuNRFMnRXvnZ7BGaFDzStNvxx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -31,19 +415,7 @@
       <recent name="$PROJECT_DIR$/day15/exercise02" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.exercise04 (1)">
+  <component name="RunManager" selected="Python.shopping01">
     <configuration name="demo01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="month01" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -58,28 +430,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day17/demo01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="demo01" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="month01" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day15" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day15/demo01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,13 +504,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="shopping01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="month01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day09" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day09/shopping01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.shopping01" />
         <item itemvalue="Python.exercise04 (1)" />
         <item itemvalue="Python.demo01 (1)" />
         <item itemvalue="Python.exercise01 (1)" />
         <item itemvalue="Python.exercise04" />
-        <item itemvalue="Python.demo01" />
       </list>
     </recent_temporary>
   </component>
@@ -244,6 +615,12 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="465" y="3" key="#shopping01" timestamp="1631880111807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="3" key="#shopping01/0.0.1536.824@0.0.1536.824" timestamp="1631880111807" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -276,48 +653,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/month01$exercise03.coverage" NAME="exercise03 Coverage Results" MODIFIED="1597048300628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18" />
-    <SUITE FILE_PATH="coverage/month01$homework.coverage" NAME="homework Coverage Results" MODIFIED="1595676677375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08" />
-    <SUITE FILE_PATH="coverage/month01$homework01.coverage" NAME="homework01 Coverage Results" MODIFIED="1596720841587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day12" />
-    <SUITE FILE_PATH="coverage/month01$exercise06.coverage" NAME="exercise06 Coverage Results" MODIFIED="1596890078436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16" />
-    <SUITE FILE_PATH="coverage/month01$exercise12.coverage" NAME="exercise12 Coverage Results" MODIFIED="1594525088651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
-    <SUITE FILE_PATH="coverage/month01$exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1594295081438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
-    <SUITE FILE_PATH="coverage/month01$demo01.coverage" NAME="demo01 Coverage Results" MODIFIED="1597478984804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day15" />
-    <SUITE FILE_PATH="coverage/month01$exercise02.coverage" NAME="exercise02 Coverage Results" MODIFIED="1597048164974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18" />
-    <SUITE FILE_PATH="coverage/month01$exercise08.coverage" NAME="exercise08 Coverage Results" MODIFIED="1596965879538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day17" />
-    <SUITE FILE_PATH="coverage/month01$bill.coverage" NAME="bill Coverage Results" MODIFIED="1597149716843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progect_month01/game2048" />
-    <SUITE FILE_PATH="coverage/month01$exercie06.coverage" NAME="exercie06 Coverage Results" MODIFIED="1594455115564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
-    <SUITE FILE_PATH="coverage/month01$exercise__1_.coverage" NAME="exercise (1) Coverage Results" MODIFIED="1594342986695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
-    <SUITE FILE_PATH="coverage/month01$exercise11.coverage" NAME="exercise11 Coverage Results" MODIFIED="1594472539898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
-    <SUITE FILE_PATH="coverage/month01$homework02__1_.coverage" NAME="homework02 (1) Coverage Results" MODIFIED="1594715681715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
-    <SUITE FILE_PATH="coverage/month01$skill_manager.coverage" NAME="skill_manager Coverage Results" MODIFIED="1596704047864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myproject/skill_system" />
-    <SUITE FILE_PATH="coverage/month01$exercise05.coverage" NAME="exercise05 Coverage Results" MODIFIED="1596945324486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day17" />
-    <SUITE FILE_PATH="coverage/month01$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1597155182633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progect_month01/game2048" />
-    <SUITE FILE_PATH="coverage/month01$revew01.coverage" NAME="revew01 Coverage Results" MODIFIED="1594277919300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
-    <SUITE FILE_PATH="coverage/month01$homework04.coverage" NAME="homework04 Coverage Results" MODIFIED="1595679494692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08" />
-    <SUITE FILE_PATH="coverage/month01$homework01__1_.coverage" NAME="homework01 (1) Coverage Results" MODIFIED="1596425095182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day12" />
-    <SUITE FILE_PATH="coverage/month01$shopping01.coverage" NAME="shopping01 Coverage Results" MODIFIED="1596424144689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day09" />
-    <SUITE FILE_PATH="coverage/month01$exercise10.coverage" NAME="exercise10 Coverage Results" MODIFIED="1594470106804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
-    <SUITE FILE_PATH="coverage/month01$homework03.coverage" NAME="homework03 Coverage Results" MODIFIED="1596279055927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11" />
-    <SUITE FILE_PATH="coverage/month01$exercise02__1_.coverage" NAME="exercise02 (1) Coverage Results" MODIFIED="1596192450375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11" />
-    <SUITE FILE_PATH="coverage/month01$exercise07.coverage" NAME="exercise07 Coverage Results" MODIFIED="1596961187273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day17" />
-    <SUITE FILE_PATH="coverage/month01$exercise04.coverage" NAME="exercise04 Coverage Results" MODIFIED="1598177972279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day09/day08" />
-    <SUITE FILE_PATH="coverage/month01$game2048.coverage" NAME="game2048 Coverage Results" MODIFIED="1595822105928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progect_month01" />
-    <SUITE FILE_PATH="coverage/month01$skill_deployer.coverage" NAME="skill_deployer Coverage Results" MODIFIED="1596704360314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myproject/skill_system" />
-    <SUITE FILE_PATH="coverage/month01$main.coverage" NAME="main Coverage Results" MODIFIED="1597155091364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progect_month01/game2048" />
-    <SUITE FILE_PATH="coverage/month01$skill_manager__1_.coverage" NAME="skill_manager (1) Coverage Results" MODIFIED="1596705319559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day15/myproject/skill_system" />
-    <SUITE FILE_PATH="coverage/month01$del.coverage" NAME="del Coverage Results" MODIFIED="1594352197906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
-    <SUITE FILE_PATH="coverage/month01$homework02.coverage" NAME="homework02 Coverage Results" MODIFIED="1596339704909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11" />
-    <SUITE FILE_PATH="coverage/month01$exercise01__1_.coverage" NAME="exercise01 (1) Coverage Results" MODIFIED="1598263844865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day10" />
-    <SUITE FILE_PATH="coverage/month01$iterable_helper.coverage" NAME="iterable_helper Coverage Results" MODIFIED="1597030654645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18/common" />
-    <SUITE FILE_PATH="coverage/month01$demo01__1_.coverage" NAME="demo01 (1) Coverage Results" MODIFIED="1598357815789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day17" />
-    <SUITE FILE_PATH="coverage/month01$shopping.coverage" NAME="shopping Coverage Results" MODIFIED="1595749402243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day09" />
-    <SUITE FILE_PATH="coverage/month01$exercise04__1_.coverage" NAME="exercise04 (1) Coverage Results" MODIFIED="1598360797271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day13" />
-    <SUITE FILE_PATH="coverage/month01$skill_deployer__1_.coverage" NAME="skill_deployer (1) Coverage Results" MODIFIED="1596705450055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day15/myproject/skill_system" />
-    <SUITE FILE_PATH="coverage/month01$exercise01.coverage" NAME="exercise01 Coverage Results" MODIFIED="1597230450711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01" />
-    <SUITE FILE_PATH="coverage/month01$exercise09.coverage" NAME="exercise09 Coverage Results" MODIFIED="1595419735743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day06" />
-    <SUITE FILE_PATH="coverage/month01$exercise06__1_.coverage" NAME="exercise06 (1) Coverage Results" MODIFIED="1596948828877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day17" />
   </component>
 </project>

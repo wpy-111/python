@@ -8,8 +8,8 @@ model_prefix="/home/root/workspace/autostart/src/"
 # mession config
 # one more for background
 MISSION_NUM = 8
-mission_low = 0.3
-mission_high = 0.75
+mission_low = 0.4
+mission_high = 0.9
 MISS_DURATION = 200
 mission_label_list = {
 	0: "background",
@@ -17,7 +17,8 @@ mission_label_list = {
 	2: "dunhuang",
 	3: "dingxiangjun",
 	4: "target",
-	5: "trophies"
+	5: "trophies",
+	6: "soldier"
 }
 
 # sign config
@@ -37,7 +38,7 @@ cruise = {
 # sign models
 sign = {
 	"model": model_prefix + "models/sign",
-	"threshold": 0.6,
+	"threshold": 0.3,
 	"label_list": sign_list,
 	# label = 0 is background
 	"class_num": 10
@@ -45,7 +46,7 @@ sign = {
 # task model
 task = {
 	"model":model_prefix + "models/task",
-	"threshold":0.6,
+	"threshold":0.9,
 	"label_list":mission_label_list
 }
 

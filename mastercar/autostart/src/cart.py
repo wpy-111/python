@@ -10,10 +10,13 @@ comma_head_02_motor = bytes.fromhex('77 68 06 00 02 0C 01 02')
 comma_head_03_motor = bytes.fromhex('77 68 06 00 02 0C 01 03')
 comma_head_04_motor = bytes.fromhex('77 68 06 00 02 0C 01 04')
 comma_trail = bytes.fromhex('0A')
-
+comma_head_01_motor_read = bytes.fromhex('77 68 06 00 01 0C 01 01')
+comma_head_02_motor_read = bytes.fromhex('77 68 06 00 01 0C 01 02')
+comma_head_03_motor_read = bytes.fromhex('77 68 06 00 01 0C 01 03')
+comma_head_04_motor_read = bytes.fromhex('77 68 06 00 01 0C 01 04')
 class Cart:
     def __init__(self):
-        self.velocity = 25
+        self.velocity = 30
         self.Kx=0.85
         portx = "/dev/ttyUSB0"
         bps = 115200
@@ -84,7 +87,25 @@ class Cart:
         self.serial.write(send_data_02_motor)
         self.serial.write(send_data_03_motor)
         self.serial.write(send_data_04_motor)
-        # self.serial.flush()
+        self.serial.flush()
+
+        send_data_01_motor_read = comma_head_01_motor_read + left_front.to_bytes(1, byteorder='big', signed=True) + comma_trail
+        send_data_02_motor_read = comma_head_02_motor_read + right_front.to_bytes(1, byteorder='big', signed=True) + comma_trail
+        send_data_03_motor_read = comma_head_03_motor_read + left_rear.to_bytes(1, byteorder='big', signed=True) + comma_trail
+        send_data_04_motor_read = comma_head_04_motor_read + right_rear.to_bytes(1, byteorder='big', signed=True) + comma_trail
+        self.serial.write(send_data_01_motor_read)
+        left_front_return = serial.read()
+        self.serial.write(send_data_02_motor_read)
+        right_front = serial.read()
+        self.serial.write(send_data_03_motor_read)
+        left_rear = serial.read()
+        self.serial.write(send_data_04_motor_read)
+        right_rear = serial.read()
+        print("left_front_return:",left_front_return)
+        print("right_front:",right_front)
+        print("left_rear:",left_rear)
+        print("right_rear:",right_rear)
+        self.serial.flush()
 
     def turn_left(self):
         speed = self.velocity 
@@ -103,7 +124,21 @@ class Cart:
     def reverse(self):
         speed = self.velocity 
         self.move([-speed,-speed,-speed,-speed])
-        
+
+    def return_data(self):
+        comma_head_01_motor_read = bytes.fromhex('77 68 06 00 01 79 01 01')
+        comma_head_02_motor_read = bytes.fromhex('77 68 06 00 01 79 01 02')
+        comma_head_03_motor_read = bytes.fromhex('77 68 06 00 01 79 01 03')
+        comma_head_04_motor_read = bytes.fromhex('77 68 06 00 01 79 01 04')
+        left_front_return = serial.read()
+        right_front = serial.read()
+        left_rear = serial.read()
+        right_rear = serial.read()
+        print("left_front_return:",left_front_return)
+        print("right_front:",right_front)
+        print("left_rear:",left_rear)
+        print("right_rear:",right_rear)
+
 
 def test():
     c = Cart();

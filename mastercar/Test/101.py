@@ -1,8 +1,26 @@
 
 import cv2
 import numpy as np
-img = cv2.imread('22.png')
-frame = cv2.resize(img, (512, 512))
+cnn_args = {
+    "shape": [1, 3, 500, 500],
+    "ms": [125.5, 0.00392157]
+}
+ms = cnn_args["ms"]
+img = cv2.imread('1.png')
+# frame = cv2.resize(img, (128, 128))
+# img = frame.astype(np.float32)
+# img = img - ms[0]
+# img = img * ms[1]
+# img = np.expand_dims(img, axis=0)
+# img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+# cv2.imshow('img',img)
+# cv2.waitKey()
+
+
+#
+#
+#
+frame = cv2.resize(img, (1024, 768))
 lower_hsv = np.array([20, 75, 160])
 upper_hsv = np.array([40, 255, 255])
 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -11,6 +29,6 @@ img = mask
 img = np.array(img).astype(np.float32)
 img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 cv2.imshow('img',img)
-img = img / 255.0
+# img = img / 255.0
 img = np.expand_dims(img, axis=0)
 cv2.waitKey()
